@@ -24,15 +24,10 @@ However, a similar scenario might be implemented by simply connecting LivePerson
 
 ### Messaging Conversation Survey events for Function Invocation
 
-Conversational Cloud **Messaging Conversation Survey** offers two different triggering events:
 
-#### Messaging Survey Started
+* Messaging Survey Started
 
-This event is fired when a consumer initiates a messaging survey.
-
-#### Messaging Survey Ended
-
-This event is fired when a consumer finishes a messaging survey.
+* Messaging Survey Ended
 
 ### Step-by-Step implementation guide
 

@@ -24,7 +24,7 @@ $(document).ready(function () {
   capabilitiesSearch();
   allArticlesClick();
   scrollToHash();
-  // domainTool();
+  domainTool();
   searchClick(event);
   //detect if mobile user
   if (/Mobi|Android/i.test(navigator.userAgent) == false) {
@@ -165,22 +165,19 @@ function navigateContent(url) {
         );
       });
       crossBrowserSafariCheck();
-
       anchors.add("h3, h4");
       populateAnchors();
       codeButtons();
       replaceTitle();
       handleUniquePages();
-
       setNoticeIcon();
-
       setImportantIcon();
       searchFunction();
       capabilitiesSearch();
       searchHighlight();
       allArticlesClick();
       scrollToHash();
-      // domainTool();
+      domainTool();
       searchClick();
 
       //from here, the rest of the code has to do with link highlighting for the sidebar
@@ -714,20 +711,22 @@ function scrollToHash() {
     if (window.location.hash && window.location.hash != "#top") {
       var hash = window.location.hash;
       var linkScroll = $('a[href*="' + hash + '"]');
+      console.log(linkScroll);
       if (linkScroll.length > 1) {
-        var linkOffset = $(linkScroll[1]).offset().top;
+        var linkOffset = $(linkScroll[0]).offset().top;
       } else {
         var linkOffset = $(linkScroll).offset().top;
       }
+      console.log(linkOffset);
       $("body, html").animate(
         {
-          scrollTop: linkOffset,
+          scrollTop: linkOffset - 120,
         },
         1000,
         "swing"
       );
     }
-  }, 1000);
+  }, 3000);
 }
 function menuDrop() {
   //begin by setting the list's data to reflect that it's open
@@ -796,3 +795,58 @@ function searchClick(event) {
 
 //legacy function, probably not needed
 $("#mysidebar").height($(".nav").height());
+
+function domainTool() {
+	var $title = $('.h1').text();
+	//if we're on the Domain API page
+	if ($title == "Domain API") {
+		var input;
+		var accountInput;
+		const csdsButton = document.getElementById("csds-button");
+		const csdsResult = document.getElementById("csds-result");
+		var csdsUrl;
+		var html = "";
+		//when  a user clicks submit
+		function retrieveDomains(account) {
+			$.ajax({
+				url: csdsUrl,
+				headers: {
+					'Accept': 'application/json'
+				},
+                dataType: "json"
+            })
+            .done(function (data) {
+                html = '';
+                $(csdsResult).css('display', 'table');
+                if (data.baseURIs.length > 0) {
+                    html += '<thead><th>Service name</th><th>Base URI</th></thead><tbody>';
+                    //sort results alphabetically
+                    data.baseURIs.sort(function (a, b) {
+                        var m1 = a.service.toLowerCase();
+                        var m2 = b.service.toLowerCase();
+                        if (m1 < m2) return -1;
+                        if (m1 > m2) return 1;
+                        return 0;
+                    })
+                    $.each(data.baseURIs, function () {
+                        html += `<tr><td>${this.service}</td><td>${this.baseURI}</td></tr>`;
+                    });
+                    html += '</tbody>'
+                    csdsResult.innerHTML = html;
+                  }
+                })
+            .fail(function () {
+                csdsResult.innerHTML = "Unable to retrieve base URIs for account, please verify your account number.";
+            })
+          }
+          function retrieveUrl() {
+            input = document.getElementById("account");
+            accountInput = input.value;
+            //take the account number and populate the CSDS URL
+            csdsUrl = 'https://api.liveperson.net/api/account/' + accountInput + '/service/baseURI?version=1.0';
+            //take the account we just retrieved and call ajax using the URL we just created above
+            retrieveDomains(accountInput);
+          }
+          csdsButton.addEventListener("click", retrieveUrl);
+      }
+    }
