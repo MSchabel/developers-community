@@ -50,7 +50,7 @@ This code disables the behavior until the variable is set to "false" once again.
 
 To disable context switching at the conversation start, you can add this code to Global Functions. To disable it at the point of a specific situation, you can add the code to any interaction.
 
-### Create a new dialog
+### Create a dialog
 
 1. Open the bot.
 2. Click **Add Dialog** in the lower-left corner.
@@ -59,6 +59,38 @@ To disable context switching at the conversation start, you can add this code to
     - **Dialog Type**: Select the type of dialog; for help with this, see *Dialog types* farther above on this page.
 4. Click **Save**.
 5. Build out the dialog as per your requirements.
+
+
+### Import a dialog
+
+You can import one or more dialogs from one bot to another. This can be advantageous when you have a well-defined dialog in one bot that you want to quickly and easily reuse in a different bot. Note the following:
+
+* You can import dialogs from only one bot at a time.
+* You can import a maximum of 10 dialogs at a time.
+* You can import dialogs of all types except Fallback and Disambiguation.
+* You can import dialogs from the bots to which you have access in your organization. For example, you can’t import dialogs from a private bot that was created by another bot developer.
+* The following is imported:  
+    * All selected dialogs and the interactions therein.
+    * All integrations referenced in the selected dialogs.
+* During the import:
+    * The order of the interactions is maintained.
+    * The “next action” for each interaction is maintained whenever possible. If you don’t import a dialog that is referenced, the “next action” is cleared. After the import you are shown an error message, so you can import the associated dialog and/or update the next action as appropriate.
+    * The assignments (IDs) of domains, intents, and entities are maintained.
+* If you import a dialog that uses a knowledge base integration, and that knowledge base is private to another, …???
+
+**To import a dialog from one bot to another**
+
+1. Open the destination bot.
+2. Click **Add Dialog** in the lower-left corner.
+3. In the Add Dialog dialog box, select the **From Existing Bots** tab.
+4. Browse and/or search to find and select the dialogs to import. You can search by…
+5. Click **Add**.
+
+    The selected dialogs are imported. At this point, you might need to do the following:
+
+    * If you received any errors, this is because you imported a dialog that referenced another dialog that you didn’t import. In this case, the “next action” in the relevant interaction in the imported dialog is cleared. To resolve this, import the associated dialog and/or update the next action as appropriate.
+    * You might want to rename the imported dialogs and interactions. They are given standard names based on the destination bot name and element name.
+
 
 ### Close the dialog
 
