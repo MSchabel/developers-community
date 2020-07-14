@@ -57,3 +57,19 @@ When working in Intent Builder, you’ll use one of the following high-level wor
 There are some iterative steps in each workflow.
 
 If the domain is using a 3rd-party NLU engine, you'll need to [connect the NLU engine](intent-builder-natural-language-understanding.html#connect-a-3rd-party-nlu-engine) before you train.
+
+### Starter packs
+
+To get you quickly up and running with [intents](intent-builder-intents.html), LivePerson provides a set of starter packs that you can easily add to your Intent Builder environment. A starter pack is a ready-made domain that includes a set of predefined intents. There are two kinds of starter packs available:
+
+* Generic starter packs for a number of verticals: Telecommunications, Financial Services, and more.
+* Cross-vertical starter packs that are appropriate for all verticals. These include starter packs for things like account management, billing and payment, “small talk,” and more.
+
+{Nice preview screenshot here}
+
+Once you add a domain using a starter pack, you can customize it as you see fit. The domain behaves like any other you might create manually or via an import file.
+
+If you want a fast, low effort way to get up and running with well-defined intents, LivePerson recommends that you get started using starter packs.
+
+{: .important}
+Starter packs for the [LP NLU v1 engine](intent-builder-natural-language-understanding.html#livepersons-nlu-engine) aren’t supported.
