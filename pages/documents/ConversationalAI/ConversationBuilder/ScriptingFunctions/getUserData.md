@@ -32,12 +32,34 @@ The "lp_" prefix indicates the LivePerson platform.
 
 | Function Name | Arguments | Returns |
 | --- | --- | --- |
-| `getUserChannel()` | None | lp_sms, lp_web, lp_inapp, lp_whatsapp, lp_rcs, lp_abc, twilio_sms, lp_fb |
+| `getUserChannel()` | None | lp_sms, lp_web, lp_inapp, lp_whatsapp, lp_rcs, lp_abc, twilio_sms, or lp_fb |
 
 #### Example
 
 ```javascript
 var channel = botContext.getUserChannel();
+botContext.printDebugMessage("channel used by the user is: " + channel);
+```
+
+
+### Get user platform type
+Returns the type of platform that the user is currently communicating on. This function returns:
+
+* SMS
+* INAPP (for In-app SDK)
+* FACEBOOK
+* ABC (for Apple Business Chat)
+* RCS
+* WHATSAPP
+
+| Function Name | Arguments | Returns |
+| --- | --- | --- |
+| `getUserPlatformType()` | None | SMS, INAPP, FACEBOOK, ABC, RCS, or WHATSAPP |
+
+#### Example
+
+```javascript
+var channel = botContext.getUserPlatformType();
 botContext.printDebugMessage("channel used by the user is: " + channel);
 ```
 
