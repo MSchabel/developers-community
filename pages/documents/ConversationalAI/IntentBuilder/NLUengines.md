@@ -154,7 +154,7 @@ Repeat this step twice to create *two* sets of IBM Watson or Google DialogFlow s
 
 #### Step 3: Add a domain for the 3rd-party NLU provider
 
-In Intent Builder, [add a domain](intent-builder-domains.html#add-a-domain) that uses the 3rd-party NLU engine as its NLU provider. You can import the intents and entities at that time or add them later but before proceeding to step 5.
+In Intent Builder, add a [domain](intent-builder-domains.html) that uses the 3rd-party NLU engine as its NLU provider. You can import the intents and entities at that time or add them later but before proceeding to step 5.
 
 #### Step 4: Create the NLU provider credentials
 
