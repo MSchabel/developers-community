@@ -84,3 +84,23 @@ When an NLU search is performed, the knowledge base's language works differently
 * If the knowledge base uses *Knowledge Base* intents, the knowledge base's language is used. In this case, only English and Spanish are supported.
 
 * If the knowledge base uses *Domain* intents, the domain's language is used instead. In this case, the languages supported depend on the domain's [NLU provider](intent-builder-natural-language-understanding.html).
+
+### Active versus inactive articles
+
+An article is either active or inactive. Active articles are returned in knowledge base searches in Knowledge Base integrations while inactive articles aren't returned.
+
+An article is active if its **Enabled** advanced setting is turned on. If the article doesn't have specified **Valid From** and **Valid To** dates, the article will always be active. If the article has a **Valid From** date and a **Valid To** date, the article will only be active during the time period when the current date falls on or within the specified dates.
+
+An article is inactive if its **Enabled** advanced setting is turned off. It is also inactive if its **Enabled** setting is turned on, but the current date falls outside the date range specified in the article's **Valid From** and **Valid To** dates.
+
+#### Specifying Valid From and Valid To dates
+
+By specifying **Valid From** and/or **Valid To** dates for an article, you can control not just when an article becomes active, but also if and when it expires. For example, you might run a promotion over a holiday that has an associated FAQ, and that FAQ should only be used for a specific, finite period of time. You can accomplish this by setting the article's **Valid From** and **Valid To** dates.
+
+You can specify an open-ended date range, such that the article can remain active indefinitely once it becomes active, by omitting the **Valid To** date. Similarly, you can activate an article immediately after you add it by omitting the **Valid From** date.
+
+#### Identifying an article's status
+
+In the Knowledge Base application, you can easily identify an article's active/inactive status:
+
+**screen**

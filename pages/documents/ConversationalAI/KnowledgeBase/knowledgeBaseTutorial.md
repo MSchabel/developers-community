@@ -43,15 +43,13 @@ This tutorial is designed to familiarize you with Knowledge Base.
 
         Tags help to increase the accuracy of Knowledge Base search results by highlighting the key sections of the user's message.
 
+3. Scroll down, and click **Advanced Settings**.
+4. Turn on (enable) the **Enabled** setting.
 6. Click **Save**.
 
 Back in the search view, you should now see your new article, which should look something like this:
 
 <img class="fancyimage" style="width:800px" src="img/ConvoBuilder/kb_tutorial4.png">
-
-Note that the article has a “Pending” notation on it. We add this for new articles so that a manager or supervisor can approve them before they are included in the results.
-
-To continue with this tutorial, click the **Enable** link over on the right.
 
 ### Step 3: Train and tune
 
