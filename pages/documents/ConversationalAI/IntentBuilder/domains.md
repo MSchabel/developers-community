@@ -16,25 +16,29 @@ For an introduction to starter packs, see [here](intent-builder-overview.html#st
 **To add a domain using a starter pack**
 
 1. Access the Intent Builder application, as described [here](intent-builder-overview.html#access-intent-builder).
-2. In the dashboard that lists your domains, click **Prebuilt Domains** at the top of the domain list.
+2. In the dashboard that lists your domains, click **Add Domain** in the upper-right corner.
+3. In the Add Domain dialog box, click the **Prebuilt Domains** tab.
 
     **screen**
 
-3. On the Prebuilt Domains tab in the Add Domain dialog box, select the desired domain. Then click **Preview** to see a description of the domain and some sample user phrases. This helps you to verify that the domain is the one you want.
+4. Select the desired domain. Then click **Preview** to see a description of the domain and some sample user phrases. This helps you to verify that the domain is the one you want.
 
     **screen**
 
-4. Click **Add**.
+5. Click **Add**.
     
     {: .important}
-    When you add a domain using a starter pack, there’s no need to train or activate the domain for the first time. Both of these steps are done automatically. However, from this point forward, things work as if you had created the domain manually. You can customize the domain as you see fit. If you subsequently make any changes, you’ll need to manually re-train the domain to create a new model version that reflects the changes. And when ready, you’ll need to activate the new model version.
+    When you add a domain using a starter pack, there’s no need to train or activate the domain for the first time. Both of these steps are done automatically. However, from this point forward, things work as if you had created the domain manually: You can customize the domain as you see fit. If you subsequently make any changes, you’ll need to manually re-train the domain to create a new model version that reflects the changes. And when ready, you’ll need to activate the new model version.
 
 
 ### Add a domain manually or using an import file
 
+**To add a domain manually or using an import file**
+
 1. Access the Intent Builder application as described [here](intent-builder-overview.html#access-intent-builder).
-2. In the dashboard that lists your domains, click **New domain** in the upper-right corner.
-3. On the Add Domain page, specify the following: 
+2. In the dashboard that lists your domains, click **Add domain** in the upper-right corner.
+3. In the Add Domain dialog box, click the **Custom Domain** tab.
+4. Specify the following: 
     * **Domain Name**: Enter a name. Use a standard naming convention to make sorting and finding domains easier.
     * **Manual** or **Import**: If you want to manually add intents and entities to the domain, select "Manual." If you want to import them from a file, select "Import."
     * **CSV** or **Google Sheet**: If you selected to import intents and entities, select the type of import file involved, and then use the controls that appear to upload the files. You can import intents but not entities if desired; in this case, don't specify an entities file/sheet. **Note:** An import file should only be named with and contain alphanumeric characters.
@@ -43,9 +47,10 @@ For an introduction to starter packs, see [here](intent-builder-overview.html#st
 
     * **NLU Provider**: Select the provider of the NLU engine to use. For help, see the discussion on NLU engines [here](intent-builder-natural-language-understanding.html).
     * **Language**: Select the language of the domain.
-4. Click **Add Domain**.
+5. Click **Add**.
     
     If you didn't import them, you can now add intents and entities to the domain.
+
 
 ### Create an import file
 
