@@ -90,7 +90,7 @@ To accomplish this, in the Display Article interaction, we've configured the nex
 
 ### Enable or disable an article
 
-Enabled articles are returned by knowledge base searches in Knowledge Base integrations, while disabled articles are not. That said, keep in mind that an enabled article is returned only if the article is active, i.e., if the current date falls on or within the article's **Valid From** and **Valid To** dates if specified. For more on this, see the discussion on active versus inactive articles [here](knowledge-base-overview.html#active-versus-inactive-articles).
+Enabled articles are returned by knowledge base searches in Knowledge Base integrations, while disabled articles are not. That said, keep in mind that an enabled article is returned only if the article is active, i.e., if the current date falls within the time period specified by the article's **Valid From** and **Valid To** dates, if specified. For more on this, see the discussion on active versus inactive articles [here](knowledge-base-overview.html#active-versus-inactive-articles).
 
 **To enable or disable an article**
 
