@@ -95,7 +95,7 @@ An article is inactive if its **Enabled** advanced setting is turned off. It is 
 
 #### Specifying Valid From and Valid To dates
 
-By specifying **Valid From** and/or **Valid To** dates for an article, you can control not just when an article becomes active, but also if and when it expires. For example, you might run a promotion over a holiday that has an associated FAQ, and that FAQ should only be used for a specific, finite period of time. You can accomplish this by setting the article's **Valid From** and **Valid To** dates.
+By specifying **Valid From** and **Valid To** dates for an article, you can control not just when an article becomes active, but also if and when it expires. For example, you might run a promotion over a holiday that has an associated FAQ, and that FAQ should only be used for a specific, finite period of time. You can accomplish this by setting the article's **Valid From** and **Valid To** dates.
 
 You can specify an open-ended date range, such that the article can remain active indefinitely once it becomes active, by omitting the **Valid To** date. Similarly, you can activate an article immediately after you add it by omitting the **Valid From** date.
 
