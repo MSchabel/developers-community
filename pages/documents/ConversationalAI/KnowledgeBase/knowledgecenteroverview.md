@@ -104,3 +104,7 @@ You can specify an open-ended date range, such that the article can remain activ
 In the Knowledge Base application, you can easily identify an article's active/inactive status:
 
 **screen**
+
+You can also search for articles by active/inactive status:
+
+**screen**
