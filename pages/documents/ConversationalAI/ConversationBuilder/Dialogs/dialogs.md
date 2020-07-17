@@ -52,12 +52,17 @@ To disable context switching at the conversation start, you can add this code to
 
 ### Create a dialog
 
+**To create a dialog**
+
 1. Open the bot.
 2. Click **Add Dialog** in the lower-left corner.
 3. In the Add Dialog window, select the **New Dialog** tab.
+
+    <img class="fancyimage" style="width:600px" src="img/ConvoBuilder/dialogs_create1.png">
+
 3. Specify the following:
     - **Dialog Name**: Enter a descriptive name for the dialog. Use a standard naming convention to make your dialogs more sortable and easier to find.
-    - **Description**: Enter a description of the dialog's purpose.
+    - **Description**: (Optional) Enter a brief description of the dialog's purpose. (The description is displayed in the user interface for importing dialogs, discussed below, to help bot developers make decisions on which dialogs to select to import.)
     - **Dialog Type**: Select the type of dialog; for help with this, see *Dialog types* farther above on this page.
 4. Click **Save**.
 5. Build out the dialog as per your requirements.
@@ -65,10 +70,9 @@ To disable context switching at the conversation start, you can add this code to
 
 ### Import a dialog
 
-You can import one or more dialogs from one bot to another. This can be advantageous when you have a well-defined dialog in one bot that you want to quickly and easily reuse in a different bot. Note the following:
+You can import one or more dialogs into a bot. This can be advantageous when you have a well-defined dialog in one bot that you want to quickly and easily reuse in a different bot. Note the following:
 
-* You can import dialogs from only one bot at a time.
-* You can import a maximum of 10 dialogs at a time. If you need to import more, you can repeat the process.
+* You can import a maximum of 10 dialogs at a time, from multiple bots. If you need to import more, you can repeat the process.
 * You can import dialogs of all types except Fallback and Disambiguation.
 * You can import dialogs from the bots to which you have access in your organization. For example, you can’t import dialogs from a private bot that was created by another bot developer.
 * The following is imported:  
@@ -76,7 +80,7 @@ You can import one or more dialogs from one bot to another. This can be advantag
     * All integrations referenced in the selected dialogs.
 * During the import:
     * The order of the interactions is maintained.
-    * The “next action” for each interaction is maintained whenever possible. If you don’t import a dialog that is referenced, the “next action” is cleared. After the import you are shown an error message, so you can import the associated dialog and/or update the next action as appropriate.
+    * The “next action” for each interaction is maintained whenever possible. If you don’t import a dialog that is referenced by an interaction, that interaction's “next action” is cleared. After the import you are shown an error message to inform you of this, so you can review the imported dialogs and perform another import and/or make changes as appropriate.
     * The assignments (IDs) of domains, intents, and entities are maintained.
 * If you import a dialog that uses a knowledge base integration, and that knowledge base is private to another, you can still use it in the bot, but you can't edit that knowledge base.
 
@@ -86,12 +90,17 @@ You can import one or more dialogs from one bot to another. This can be advantag
 2. Click **Add Dialog** in the lower-left corner.
 3. In the Add Dialog window, select the **From Existing Bots** tab.
 4. Browse and/or search to find and select the dialogs to import. You can search by bot name and dialog name.
+
+    <img class="fancyimage" style="width:600px" src="img/ConvoBuilder/dialogs_import1.png">
+
 5. Click **Add**.
 
-    The selected dialogs are imported. At this point, you might need to do the following:
+    The selected dialogs are imported.
 
+    * At this point, you might want to rename the imported dialogs, interactions, and integrations. They are given standard names based on the element name and destination bot name, and the names include a timestamp.
     * If you received any errors, this is because you imported a dialog that referenced another dialog that you didn’t import. In this case, the “next action” in the relevant interaction in the imported dialog is cleared. To resolve this, import the associated dialog and/or update the next action as appropriate.
-    * You might want to rename the imported dialogs, interactions, and integrations. They are given standard names based on the element name and destination bot name, and they include a timestamp.
+
+        <img class="fancyimage" style="width:300px" src="img/ConvoBuilder/dialogs_import2.png">
 
 
 ### Duplicate a dialog
@@ -109,7 +118,7 @@ You can duplicate a dialog within a bot. This duplicates the selected dialog and
 3. TBD
 4. TBD
 
-    At this point, you might want to rename the duplicated dialog and interactions. They are given standard names based on the element name and bot name, and they includes a timestamp.
+    At this point, you might want to rename the duplicated dialog and interactions. They are given standard names based on the element name and bot name, and the names includes a timestamp.
 
 
 
@@ -175,7 +184,9 @@ Dialog settings include:
 
 ### Delete a dialog
 
-Deleting a dialog is a non-recoverable action, so be certain about doing so before taking this action. As an alternative, consider disabling the dialog instead; you can do this in the dialog's settings.
+Deleting a dialog is a non-recoverable action, so be certain about doing so before taking this action. For example, make sure the dialog isn't referenced by any others within the bot.
+
+As an alternative, consider disabling the dialog instead; you can do this in the dialog's settings.
 
 **To delete a dialog**
 
