@@ -89,7 +89,7 @@ When an NLU search is performed, the knowledge base's language works differently
 
 An article is either active or inactive. Active articles are returned in knowledge base searches in Knowledge Base integrations while inactive articles are not returned.
 
-An article is active if its **Enabled** advanced setting is turned on. If the article doesn't have specified **Valid From** and **Valid To** dates, an enabled article is always active. If the article has a **Valid From** date and a **Valid To** date, an enabled article is only active during the time period specified by those dates.
+An article is active if its **Enabled** advanced setting is turned on. If the enabled article doesn't have specified **Valid From** and **Valid To** dates, it is always active. If the enabled article has specified dates, it is only active during the time period specified by those dates.
 
 **screen**
 
