@@ -49,7 +49,7 @@ For an introduction to starter packs, see [here](intent-builder-overview.html#st
     * **Language**: Select the language of the domain.
 5. Click **Add**.
     
-    If you didn't import them, you can now add intents and entities to the domain.
+    If you didn't import intents and entities, you can now add them to the domain.
 
 
 ### Create an import file
