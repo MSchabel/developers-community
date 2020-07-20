@@ -28,7 +28,7 @@ For an introduction to starter packs, see [here](intent-builder-overview.html#st
 5. Click **Add**.
 
     {: .important}
-    There's no need to train or activate the domain after you add it. This has been done for you. However, from this point forward, things work as if you had created the domain manually: You can customize the domain as you see fit. If you subsequently make any changes, you’ll need to re-train the domain to create a new model version that reflects the changes. And when ready, you’ll need to activate the new model version.
+    After you add the domain, there's no need to train or activate it for the first time. This has been done automatically. However, from this point forward, things work as if you had created the domain manually: You can customize the domain as you see fit. If you subsequently make any changes, you must re-train the domain to create a new model version that reflects the changes. And when ready, you’ll need to activate the new model version.
 
 
 ### Add a domain manually or using an import file
