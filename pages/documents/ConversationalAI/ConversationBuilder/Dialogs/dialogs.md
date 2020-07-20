@@ -86,7 +86,7 @@ You can import dialogs from one bot to another. This can be useful when you have
 {: .important}
 When you import dialogs, consider any dependencies across the dialogs. You might or might not want to import all referenced dialogs.
 
-**To import a dialog from one bot to another**
+**To import one or more dialogs into a bot**
 
 1. Open the destination bot.
 2. Click **Add Dialog** in the lower-left corner.
