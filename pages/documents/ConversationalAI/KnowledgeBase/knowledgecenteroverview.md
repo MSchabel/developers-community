@@ -105,7 +105,7 @@ To specify a finite time period, use both date settings. To specify an open-ende
 
 In the Knowledge Base application, you can easily identify an article's active/inactive status:
 
-**screen**
+<img class="fancyimage" style="width:700px" src="img/ConvoBuilder/kb_articleStatus.png">
 
 You can also search for articles by active/inactive status:
 
