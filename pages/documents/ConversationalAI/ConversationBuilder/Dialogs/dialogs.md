@@ -81,7 +81,7 @@ You can import dialogs from one bot to another. This can be useful when you have
 * During the import:
     * The order of the interactions is maintained.
     * The assignments (IDs) of domains, intents, and entities are maintained.
-* If you import a dialog that uses a knowledge base integration, and that knowledge base is private to another, you can still use it in the bot, but you can't edit that knowledge base.
+* If you import a dialog that uses a knowledge base integration, and that knowledge base is private to another, you can still use it in the bot, but you can't view or edit that knowledge base.
 
 {: .important}
 When you import dialogs, consider any dependencies across the dialogs. You might or might not want to import all referenced dialogs.
