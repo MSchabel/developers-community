@@ -61,6 +61,8 @@ If you want to import a set of articles into a knowledge base when you add the k
 | positiveLearnings | These are phrases for which you want a match to the article to occur. A comma-separated list. |
 | negativeLearnings | These are phrases for which you don't want the article to appear in the result even if it is matched to the consumer's intent. A comma-separated list. |
 | intentName | Applicable if you're using Domain intents, not Knowledge Base intents (see [here](knowledge-base-overview.html#knowlege-base-intents-versus-domain-intents) for an understanding of the two). This is the intent associated with the article. |
+| validFrom | Specify the date and time on which the article becomes active. For more on this, see [here](knowledge-base-overview.html#active-versus-inactive-articles). |
+| validTo | Specify the date and time on which the article becomes inactive. For more on this, see [here](knowledge-base-overview.html#active-versus-inactive-articles). |
 
 ### Configure knowledge base settings
 
