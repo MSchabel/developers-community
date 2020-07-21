@@ -41,3 +41,11 @@ When implementing API integrations, follow these security best practices:
 * **Credentials**: Use a secure form of authentication and authorization. OAuth is recommended, but for a comparative list of credential types, see [here](bot-accounts-credentials.html#credential-types-authentication-types).
 * **API**: Your brand’s API should be designed according to security standards. For example, at a minimum, use an authentication mechanism. Also provide support for other best practices, such as protecting the API from high volume and bursts in traffic.
 * **API response handling**: For security and privacy reasons, you must not log returned customer data using the JavaScript API or store the data in permanent variables.
+
+### Handling API responses
+
+In the [Integration interaction](conversation-builder-interactions-integrations.html#integration-interactions) that invokes the API, you can define custom rules based on the result of the API call, i.e., its success or failure. This is done using the "API Result" match type, as described [here](conversation-builder-interactions-integrations.html#defining-rules-based-on-the-result-of-the-api-integration).
+
+In the case of a failure response (a returned status code other than 200 or 201), the bot sends a default error message of, "Sorry, I could not find anything for that." To override this message and send a different one, define a custom rule based on a failure result, as mentioned above.
+
+Be aware that the API's response of success or failure only indicates whether the request was successfully received and processed. It doesn't indicate whether any results were returned. To determine this, you'll need to use JavaScript to [transform the API result](conversation-builder-integrations-integration-basics.html#transform-an-api-result) and check for any results. You can then direct the conversation flow accordingly.
