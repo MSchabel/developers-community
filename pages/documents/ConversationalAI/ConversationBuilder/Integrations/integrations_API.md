@@ -48,4 +48,13 @@ In the [Integration interaction](conversation-builder-interactions-integrations.
 
 In the case of a failure response (a returned status code other than 200 or 201), the bot sends a default error message of, "Sorry, I could not find anything for that." To override this message and send a different one, define a custom rule based on a failure result, as mentioned above.
 
-Be aware that the API's response of success or failure only indicates whether the request was successfully received and processed. It doesn't indicate whether any results were returned. To determine this, you'll need to use JavaScript to [transform the API result](conversation-builder-integrations-integration-basics.html#transform-an-api-result) and check for any results. You can then direct the conversation flow accordingly.
+Be aware that the API's response of success or failure only indicates whether the request was successfully received and processed. It doesn't indicate whether any results were returned. To determine this, you'll need to use JavaScript in the Post-Process Code of the Integration interaction to check for any results. You can then direct the conversation flow accordingly, for example:
+
+```javascript
+var count = botContext.getBotVariable("FAQS.article.count");
+if(count < 1){
+botContext.setTriggerNextMessage("No Articles Found");
+}else{
+botContext.setTriggerNextMessage("Display Article");
+}
+```
