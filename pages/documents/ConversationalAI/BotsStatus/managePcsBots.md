@@ -10,7 +10,7 @@ indicator: both
 
 You can use the Bots Status application that's intended for monitoring agent connectors to monitor your [post-conversation survey bots](conversation-builder-bots-post-conversation-survey-bots.html). There are a few important distinctions to be aware of as you do so:
 
-* You can identify survey bots by examining the **User Name**. This is always "Survey Connector." (Normal bots display the agent name that's configured in Conversational Cloud.)
+* You can identify survey bots by examining the **User Name**. This is always "Survey Connector." (Custom bots display the agent name that's configured in Conversational Cloud.)
 * While each survey bot is listed individually in the dashboard, they all share a single agent connector.
 * Successfully deployed survey bots display "Deployed" beneath the bot name.
 
