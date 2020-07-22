@@ -12,12 +12,12 @@ indicator: both
 
 ### What's an entity?
 
-Entities are defined, simple expressions that represent groups of items. When an entity value is detected in a consumer's utterance, the bot invokes the associated entity, substituting it into the utterance before determining the consumer's intent.
+Entities are defined, simple expressions that represent groups of items. For example, an entity named `size` might represent the following values: small, medium, and large.
 
-You can use entities in two places:
+When a bot detects an entity value in a consumer's utterance, the bot invokes the associated entity, substituting it into the utterance before determining the consumer's intent. Therefore, you can use entities in two places:
 
 * In the training phrases for intents defined in [Intent Builder](intent-builder-overview.html) 
-* In the intent qualifiers for articles defined in [Knowledge Base](knowledge-base-overview.html).
+* In the intent qualifiers for articles defined in [Knowledge Base](knowledge-base-overview.html)
 
 There are three types of entities:
 
@@ -35,7 +35,7 @@ Value Set entities are keywords that represent a number of synonyms. For instanc
 * running
 * football
 
-Whenever the user's utterance contains one of these values (e.g., "I'm interested in running"), the `sports` entity is detected and invoked by the bot. Therefore, when you create training phrases for an intent, instead of defining these...
+Whenever the user's utterance contains one of these values (e.g., "I'm interested in running"), the `sports` entity is detected and invoked by the bot. This means, when you create training phrases for an intent, instead of defining these...
 
 * "I'm interested in walking"
 * "I'm interested in jogging"
