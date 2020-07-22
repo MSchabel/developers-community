@@ -99,7 +99,7 @@ When you import dialogs, consider any dependencies across the dialogs. You might
 
     The selected dialogs are imported.
 
-    * During the import,  the **Next Action** for each interaction is maintained whenever possible. If you received any errors, this is because you imported a dialog that referenced another dialog that you didn’t also import. In this case, the **Next Action** in the interaction in the imported dialog is cleared.
+    * During the import,  the **Next Action** for each interaction is maintained whenever possible. If you received any errors, this is because you imported a dialog that referenced another dialog that you didn’t also import. In this case, the **Next Action** in the interaction in the imported dialog is cleared, and you are shown an error message to inform you of this.
 
         <img class="fancyimage" style="width:400px" src="img/ConvoBuilder/dialogs_import2.png">
 
