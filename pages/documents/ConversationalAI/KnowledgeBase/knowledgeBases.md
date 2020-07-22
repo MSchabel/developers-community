@@ -61,8 +61,8 @@ If you want to import a set of articles into a knowledge base when you add the k
 | positiveLearnings | These are phrases for which you want a match to the article to occur. A comma-separated list. |
 | negativeLearnings | These are phrases for which you don't want the article to appear in the result even if it is matched to the consumer's intent. A comma-separated list. |
 | intentName | Applicable if you're using Domain intents, not Knowledge Base intents (see [here](knowledge-base-overview.html#knowlege-base-intents-versus-domain-intents) for an understanding of the two). This is the intent associated with the article. |
-| validFrom | Specify the date and time on which the article becomes active. For more on this, see [here](knowledge-base-overview.html#active-versus-inactive-articles). |
-| validTo | Specify the date and time on which the article becomes inactive. For more on this, see [here](knowledge-base-overview.html#active-versus-inactive-articles). |
+| validFrom | Specify the date and time on which the article becomes active in Epoch time in milliseconds. For more on this, see [here](knowledge-base-overview.html#active-versus-inactive-articles). |
+| validTo | Specify the date and time on which the article becomes inactive in Epoch time in milliseconds. For more on this, see [here](knowledge-base-overview.html#active-versus-inactive-articles). |
 
 ### Configure knowledge base settings
 
@@ -110,7 +110,7 @@ Before taking this action, be certain about doing so. Once you convert the inten
 After you've made changes to the Google sheet that's linked to the knowledge base, sync the knowledge base to update it with the content.
 
 {: .important}
-This action overwrites the content in the knowledge base with the content in the Google sheet, so use caution when performing this. Also be aware that all of the articles in the sheet are enabled by default (which means they are returned in knowledge base searches in Knowledge Base integrations), so ensure the contents of the sheet are suitable before you sync. You can disable articles on a per article basis, as described [here](knowledge-base-articles.html#enable-or-disable-an-article).
+This action overwrites the content in the knowledge base with the content in the Google sheet, so use caution when performing this. Also be aware that all new articles in the sheet are enabled by default (which means they are returned in knowledge base searches in Knowledge Base integrations), so ensure the contents of the sheet are suitable before you sync. You can disable articles on a per article basis, as described [here](knowledge-base-articles.html#enable-or-disable-an-article).
 
 Before performing a sync, make sure the Google sheet includes the "id" column that contains the IDs for all existing articles. If it doesn't, update the sheet accordingly before syncing.
 
