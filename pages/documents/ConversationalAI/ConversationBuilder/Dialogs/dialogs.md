@@ -110,7 +110,15 @@ When you import dialogs, consider any dependencies across the dialogs. You might
 
 ### Duplicate a dialog
 
-The dialog import feature, described above, lets you select dialogs to import from the bot that you currently have open. In effect, an import like this duplicates the dialogs within the same bot.
+You can duplicate a dialog that is of type Dialog. This can be useful when you have a well-defined dialog that you want to quickly and easily reuse in the same bot. During the import:
+
+* The order of the interactions is maintained.
+* The assignments (IDs) of domains, intents, and entities are maintained.
+
+**To duplicate a dialog**
+
+1. In the dialogs panel on the left, click <img style="width:25px" src="img/ConvoBuilder/icon_ellipsis_dialogs.png"> (3-dot icon) beside the dialog's name.
+2. Select **Duplicate Dialog**.
 
 
 ### Close the dialog
