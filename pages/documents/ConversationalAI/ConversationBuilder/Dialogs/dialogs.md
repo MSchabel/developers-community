@@ -70,7 +70,9 @@ To disable context switching at the conversation start, you can add this code to
 
 ### Import a dialog
 
-You can import dialogs from one bot to another within your organization. This can be useful when you have a well-defined dialog in one bot that you want to quickly and easily reuse in a different bot. Note the following:
+You can import dialogs from one bot to another within your organization. This can be useful when you have a well-defined dialog in one bot that you want to quickly and easily reuse in a different bot.
+
+Note the following:
 
 * You can import a maximum of 10 dialogs at a time from multiple bots. If you need to import more, you can repeat the process.
 * You can import dialogs of all types except [Fallback](conversation-builder-dialogs-fallback-dialogs.html) and [Disambiguation](conversation-builder-dialogs-disambiguation-dialogs.html).
@@ -80,7 +82,7 @@ You can import dialogs from one bot to another within your organization. This ca
     * All integrations referenced in the selected dialogs.
 * During the import:
     * The order of the interactions is maintained.
-    * The assignments (IDs) of domains, intents, and entities are maintained.
+    * The associations of domains, intents, and entities to interactions are maintained.
 * If you import a dialog that uses a knowledge base integration, and that knowledge base is owned by another bot developer and isn't [public](knowledge-base-knowledge-bases.html#configure-knowledge-base-settings), you can still use the integration in the bot, but you can't view or edit that knowledge base in the Knowledge Base application.
 
 {: .important}
@@ -99,21 +101,25 @@ When you import dialogs, consider any dependencies across the dialogs. You might
 
     The selected dialogs are imported.
 
-    * During the import,  the **Next Action** for each interaction is maintained whenever possible. If you received any errors, this is because you imported a dialog that referenced another dialog that you didn’t also import. In this case, the **Next Action** in the interaction in the imported dialog is cleared, and you are shown an error message to inform you of this.
+6. In the imported dialogs, review the **Next Action**, JavaScript code, and environment variables used in the interactions to verify proper conversation flow.
 
-        <img class="fancyimage" style="width:400px" src="img/ConvoBuilder/dialogs_import2.png">
+    During the import,  the **Next Action** for each interaction is maintained whenever possible. If you received any errors, this is because you imported a dialog that referenced another dialog that you didn’t also import. In this case, the **Next Action** in the interaction in the imported dialog is cleared, and you are shown an error message to inform you of this.
 
-       To resolve this, choose another next action, or import the relevant dialog and update the next action accordingly.
+    <img class="fancyimage" style="width:400px" src="img/ConvoBuilder/dialogs_import2.png">
+
+    To resolve this, choose another next action, or import the relevant dialog and update the next action accordingly.
     
-    * At this point, you might want to rename the imported dialogs, interactions, and integrations. They are given standard names based on the element name and destination bot name.
+    You might also want to rename the imported dialogs, interactions, and integrations. They are given standard names based on the element name and destination bot name. 
 
 
 ### Duplicate a dialog
 
-You can duplicate a dialog that is of type Dialog. This can be useful when you have a well-defined dialog that you want to quickly and easily reuse in the same bot. During the import:
+You can duplicate a dialog that is of type Dialog. This can be useful when you have a well-defined dialog that you want to quickly and easily reuse in the same bot.
+
+During the import:
 
 * The order of the interactions is maintained.
-* The assignments (IDs) of domains, intents, and entities are maintained.
+* The associations of domains, intents, and entities to interactions are maintained.
 
 **To duplicate a dialog**
 
