@@ -45,6 +45,25 @@ if (count > 10) {
 }
 ```
 
+
+### Get current user message
+
+Used for getting the most recent message from the user, whether typed or tapped (buttons or quick replies).
+
+| Function Name | Arguments | Return Payload |
+| --- | --- | --- |
+| `getCurrentUserMessage()` | None | string: The full text of the most recent message from the user. |
+
+#### Example
+
+```javascript
+// get what the user just said
+var response = botContext.getCurrentUserMessage();
+// use the response in a variable
+botContext.setBotVariable('newsSource',response,true,false);
+```
+
+
 ### Set bot transfer intent by domain
 
 Use the `setBotTransferIntentbyDomain` function to set an intent ID in the Transfer Bot Context object that can be sent from the sender bot to the receiver bot during a manual, [bot-to-bot transfer](conversation-builder-bots-bot-to-bot-transfers.html). The intent ID is derived from the supplied domain name and intent name. You can retrieve the domain name that you need from the UI. And you can retrieve the intent name that you need from the UI or via [getDialogStarterIntent](conversation-builder-scripting-functions-functions-list.html). During the transfer, the system uses the domain name and the intent name to ascertain and pass the intent ID.
@@ -153,25 +172,6 @@ The Get LP Account ID function retrieves the Conversational Cloud account ID for
 var acctId = botContext.getLPAccountId();
 
 ```
-
-
-### Get current user message
-
-Used for getting the most recent message from the user, whether typed or tapped (buttons or quick replies).
-
-| Function Name | Arguments | Return Payload |
-| --- | --- | --- |
-| `getCurrentUserMessage()` | None | string: The full text of the most recent message from the user. |
-
-#### Example
-
-```javascript
-// get what the user just said
-var response = botContext.getCurrentUserMessage();
-// use the response in a variable
-botContext.setBotVariable('newsSource',response,true,false);
-```
-
 
 ### Get current and previous skills
 
