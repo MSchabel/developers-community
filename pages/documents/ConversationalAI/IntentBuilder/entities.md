@@ -12,12 +12,12 @@ indicator: both
 
 ### What's an entity?
 
-Entities are defined, simple expressions that represent groups of items. For example, an entity named `size` might represent the following values: small, medium, and large.
+Entities are keywords that represent groups of items. For example, an entity named `SIZE` might represent the following values: small, medium, and large.
 
 When a bot detects an entity value in a consumer's utterance, the bot invokes the associated entity, substituting it into the utterance before determining the consumer's intent. Therefore, you can use entities in two places:
 
-* In the training phrases for intents defined in [Intent Builder](intent-builder-overview.html) 
-* In the intent qualifiers for articles defined in [Knowledge Base](knowledge-base-overview.html)
+* Training phrases for intents defined in [Intent Builder](intent-builder-overview.html) 
+* Intent qualifiers for articles defined in [Knowledge Base](knowledge-base-overview.html)
 
 There are three types of entities:
 
@@ -29,33 +29,35 @@ There are three types of entities:
 
 #### Value Set entities
 
-Value Set entities are keywords that represent a number of synonyms. For instance, the entity `sports` might have the following values in its value set:
+As their name suggests, Value Set entities are those that have a defined set of values. For instance, the entity `sports` might have the following values in its value set:
 
 * walking
 * running
 * football
 
-Whenever the user's utterance contains one of these values (e.g., "I'm interested in running"), the `sports` entity is detected and invoked by the bot. This means, when you create training phrases for an intent, instead of defining these...
+Whenever the user's utterance contains one of these entity values (e.g., "I'm interested in running"), the bot detects this, invokes the `sports` entity, and substitutes it into the utterance before determining the consumer's intent. This means, when you add training phrases for the intent, instead of adding these...
 
 * "I'm interested in walking"
 * "I'm interested in jogging"
 * "I'm interested in running"
 
-...you can create a single training phrase that uses the `sports` entity:
+...you can add a single training phrase that uses the `sports` entity:
 
 * "I'm interested in `sports`"
 
-Value Set entities are usually one or two words as they represent groups of simple objects.
+Each utterance above invokes this intent.
+
+The values for Value Set entities are usually one or two words, as they represent groups of simple objects.
 
 #### Regular Expression entities
 
-A Regular Expression entity works like a Value Set entity when it comes to intent matching, but it doesn't have a value set. It has a single expression defined using [Regular Expression](https://www.regexlib.com/) rules.
+A Regular Expression entity works like a Value Set entity when it comes to entity detection and intent matching, but it doesn't have a set of values. Instead, its value is a single expression defined using [Regular Expression](https://www.regexlib.com/) rules.
 
-Use a Regular Expression entity in situations where the possible values conform to a specific pattern, but the list of values is so long, rendering use of a Value Set entity unfeasible. Some example use cases include:
+Use a Regular Expression entity in situations where the possible values all conform to a specific pattern, but that list of values is so long, rendering use of a Value Set entity unfeasible. Some example use cases include:
 
 * Flight numbers
 * Order numbers
-* Dates
+* Help Desk ticket numbers
 
 #### Built-in entities
 
