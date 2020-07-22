@@ -70,18 +70,18 @@ To disable context switching at the conversation start, you can add this code to
 
 ### Import a dialog
 
-You can import dialogs from one bot to another. This can be useful when you have a well-defined dialog in one bot that you want to quickly and easily reuse in a different bot. Note the following:
+You can import dialogs from one bot to another within your organization. This can be useful when you have a well-defined dialog in one bot that you want to quickly and easily reuse in a different bot. Note the following:
 
-* You can import a maximum of 10 dialogs at a time, from multiple bots. If you need to import more, you can repeat the process.
+* You can import a maximum of 10 dialogs at a time from multiple bots. If you need to import more, you can repeat the process.
 * You can import dialogs of all types except [Fallback](conversation-builder-dialogs-fallback-dialogs.html) and [Disambiguation](conversation-builder-dialogs-disambiguation-dialogs.html).
-* You can import dialogs from the bots to which you have access in your organization. For example, you can’t import dialogs from a private bot that was created by another bot developer.
+* You can import dialogs from the bots to which you have access in your organization. For example, you can’t import dialogs from a bot that's owned by another bot developer and isn't [public](conversation-builder-bots-bot-basics.html#configure-bot-settings).
 * The following is imported:  
     * All selected dialogs and the interactions therein.
     * All integrations referenced in the selected dialogs.
 * During the import:
     * The order of the interactions is maintained.
     * The assignments (IDs) of domains, intents, and entities are maintained.
-* If you import a dialog that uses a knowledge base integration, and that knowledge base is private to another, you can still use it in the bot, but you can't view or edit that knowledge base.
+* If you import a dialog that uses a knowledge base integration, and that knowledge base is owned by another bot developer and isn't [public](knowledge-base-knowledge-bases.html#configure-knowledge-base-settings), you can still use the integration in the bot, but you can't view or edit that knowledge base in the Knowledge Base application.
 
 {: .important}
 When you import dialogs, consider any dependencies across the dialogs. You might or might not want to import all referenced dialogs.
@@ -103,28 +103,14 @@ When you import dialogs, consider any dependencies across the dialogs. You might
 
         <img class="fancyimage" style="width:400px" src="img/ConvoBuilder/dialogs_import2.png">
 
-       To resolve this, choose another next action, or import the relevant dialog and update the next action.
+       To resolve this, choose another next action, or import the relevant dialog and update the next action accordingly.
     
     * At this point, you might want to rename the imported dialogs, interactions, and integrations. They are given standard names based on the element name and destination bot name.
 
 
 ### Duplicate a dialog
 
-You can duplicate a dialog within a bot. This duplicates the selected dialog and the interactions therein. During the process:
-
-* The order of the interactions is maintained.
-* The **Next action** for each interaction is maintained.
-* The assignments (IDs) of domains, intents, and entities are maintained.
-
-**To duplicate a dialog within a bot**
-
-1. In the dialogs panel on the left, click <img style="width:25px" src="img/ConvoBuilder/icon_ellipsis_dialogs.png"> (3-dot icon) beside the dialog's name.
-2. Select **Duplicate Dialog**.
-3. TBD
-4. TBD
-
-    At this point, you might want to rename the duplicated dialog and interactions. They are given standard names based on the element name and bot name.
-
+The dialog import feature, described above, lets you select dialogs to import from the bot that you currently have open. In effect, an import like this duplicates the dialogs within the same bot.
 
 
 ### Close the dialog
