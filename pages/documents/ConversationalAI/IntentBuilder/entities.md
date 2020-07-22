@@ -12,17 +12,52 @@ indicator: both
 
 ### What's an entity?
 
-Entities are keywords that represent a number of synonyms. For instance, the entity `sports` could refer to or represent the following group of items: "walking", "jogging", "running", "football" and so on. Whenever an entity is referred to, the group that it represents is automatically inserted by the bot. So if a user sends the sentence, "I'm interested in running," the bot invokes the entity `sports`.
+Entities are defined, simple expressions that represent groups of items. When an entity value is detected in a consumer's utterance, the bot invokes the associated entity, substituting it into the utterance before determining the consumer's intent.
 
-Therefore, when you're creating training phrases for an intent, instead of typing in multiple phrases like so: "I'm interested in walking", "I'm interested in jogging", "I'm interested in running", you can just create one training phrase that looks like the following:
+You can use entities in two places:
 
-"I'm interested in `sports`".
+* In the training phrases for intents defined in [Intent Builder](intent-builder-overview.html) 
+* In the intent qualifiers for articles defined in [Knowledge Base](knowledge-base-overview.html).
 
-Entities can be used both in the context of intents as well as in a [Knowledge Base](conversation-builder-knowledge-base.html). Just like with training phrases for intents, entities can be used in training phrases for Knowledge Base articles.
+There are three types of entities:
 
-Entities are usually one or two words as they represent groups of simple objects.
+* Value Set entities
+* Regular Expression entities
+* Built-in entities
 
-### Built-in entities
+### Types of entities
+
+#### Value Set entities
+
+Value Set entities are keywords that represent a number of synonyms. For instance, the entity `sports` might have the following values in its value set:
+
+* walking
+* running
+* football
+
+Whenever the user's utterance contains one of these values (e.g., "I'm interested in running"), the `sports` entity is detected and invoked by the bot. Therefore, when you create training phrases for an intent, instead of defining these...
+
+* "I'm interested in walking"
+* "I'm interested in jogging"
+* "I'm interested in running"
+
+...you can create a single training phrase that uses the `sports` entity:
+
+* "I'm interested in `sports`"
+
+Value Set entities are usually one or two words as they represent groups of simple objects.
+
+#### Regular Expression entities
+
+A Regular Expression entity works like a Value Set entity when it comes to intent matching, but it doesn't have a value set. It has a single expression defined using [Regular Expression](https://www.regexlib.com/) rules.
+
+Use a Regular Expression entity in situations where the possible values conform to a specific pattern, but the list of values is so long, rendering use of a Value Set entity unfeasible. Some example use cases include:
+
+* Flight numbers
+* Order numbers
+* Dates
+
+#### Built-in entities
 
 The platform automatically detects the entities listed below. Using the [Assist](conversation-builder-assist.html) tool, you can assign these default entities to user interactions and have the bot populate a [slot](conversation-builder-conversation-builder-variables-slots.html#slots) with the user's input to the question to which the entity was assigned.
 
@@ -50,16 +85,32 @@ You can see from the example below, that having 2 entities match the training ph
 
 <img class="fancyimage" style="width:400px" src="img/testuserinput.png">
 
-### Add an entity
+### Add a Value Set entity
 
-**To add an entity**
+**To add a Value Set entity**
 
 1. Open the domain.
 2. In the upper-left corner, click **Entities**.
 3. Click **Add Entity** in the upper-right corner.
 4. Specify the following:
-    * **Entity name**: Enter the name of the entity using alphanumeric characters (no special characters). Consider using all capital letters and underscores (instead of spaces) as a convention; this makes the entities readily visible when they are used in intents and knowledge bases.
-    * **Entity values**: Enter each entity value, pressing Enter after each one.
+    * **Entity Name**: Enter the name of the entity using alphanumeric characters (no special characters). Consider using all capital letters and underscores (instead of spaces) as a convention; this makes the entities readily visible when they are used in intents and knowledge bases.
+    * **Entity Type**: Select "Value Set."
+    * **Entity Values**: Enter each entity value.
+5. Click **Save** in the lower-right corner.
+6. If the domain is using LivePerson NLU v2 or a 3rd-party NLU engine, train the domain so that the addition is reflected in a new model version.
+
+### Add a Regular Expression entity
+
+**To add a Regular Expression entity**
+
+1. Open the domain.
+2. In the upper-left corner, click **Entities**.
+3. Click **Add Entity** in the upper-right corner.
+4. Specify the following:
+    * **Entity Name**: Enter the name of the entity using alphanumeric characters (no special characters). Consider using all capital letters and underscores (instead of spaces) as a convention; this makes the entities readily visible when they are used in intents and knowledge bases.
+    * **Entity Type**: Select "Regular Expression."
+    * **Regular Expression**: Enter the regular expression. All standard [RegEx rules](https://www.regexlib.com/) apply.
+    * **Sample Values**: If the domain is using LivePerson NLU v2 or 3rd-party NLU engine, enter at least five (5) example values that conform to the regular expression. These values aren't used during entity detection; they're used during domain training to improve the model's performance.
 5. Click **Save** in the lower-right corner.
 6. If the domain is using LivePerson NLU v2 or a 3rd-party NLU engine, train the domain so that the addition is reflected in a new model version.
 
