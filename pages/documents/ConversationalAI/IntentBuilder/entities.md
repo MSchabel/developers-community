@@ -22,7 +22,7 @@ When a bot detects an entity value in a consumer's utterance, the bot invokes th
 There are three types of entities:
 
 * Value Set entities
-* Regular Expression entities (Supported in [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains only)
+* Regular Expression entities (Supported in only [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains)
 * Built-in entities
 
 ### Types of entities
