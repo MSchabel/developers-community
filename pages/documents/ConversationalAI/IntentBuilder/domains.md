@@ -9,11 +9,11 @@ permalink: intent-builder-domains.html
 indicator: both
 ---
 
-### Add a domain using a starter pack
+### Add a prebuilt domain
 
-For an introduction to starter packs, see [here](intent-builder-overview.html#starter-packs).
+For an introduction to prebuilt domains, see [here](intent-builder-overview.html#prebuilt-domains).
 
-**To add a domain using a starter pack**
+**To add a prebuilt domain**
 
 1. Access the Intent Builder application, as described [here](intent-builder-overview.html#access-intent-builder).
 2. In the dashboard that lists your domains, click **Add Domain** in the upper-right corner.

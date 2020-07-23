@@ -58,18 +58,18 @@ There are some iterative steps in each workflow.
 
 If the domain is using a 3rd-party NLU engine, you'll need to [connect the NLU engine](intent-builder-natural-language-understanding.html#connect-a-3rd-party-nlu-engine) before you train.
 
-### Starter packs
+### Prebuilt domains
 
-To get you quickly up and running with [intents](intent-builder-intents.html), LivePerson provides a set of starter packs that you can easily add to your Intent Builder environment. A starter pack is a ready-made domain that includes a set of well-defined, predefined intents. There are two kinds of starter packs available:
+To get you quickly up and running with [intents](intent-builder-intents.html), LivePerson provides a set of prebuilt domains that you can easily add to your Intent Builder environment. A prebuilt domain is a ready-made domain that includes a set of well-defined, predefined intents. There are two kinds of prebuilt domains available:
 
-* Generic starter packs for a number of verticals: Telecommunications, Financial Services, and more.
-* Cross-vertical starter packs that are appropriate for all verticals. These include starter packs for things like account management, billing and payment, “small talk,” and more.
+* Generic, prebuilt domains for a number of verticals: Telecommunications, Financial Services, and more.
+* Cross-vertical, prebuilt domains that are appropriate for all verticals. These include domains for things like account management, billing and payment, “small talk,” and more.
 
 **Screen**
 
-Once you [add a domain using a starter pack](intent-builder-domains.html#add-a-domain-using-a-starter-pack), you can customize the domain as you see fit. It behaves like any other you might create manually or via an import file.
+Once you [add a prebuilt domain](intent-builder-domains.html#add-a-prebuilt-domain), you can customize the domain as you see fit. It behaves like any other you might create manually or via an import file.
 
-If you want a quick, low effort way to get up and running with well-defined intents, LivePerson recommends that you get started by using starter packs.
+If you want a quick, low effort way to get up and running with well-defined intents, LivePerson recommends that you get started by taking advantage of prebuilt domains.
 
 {: .important}
-Starter packs for the [LP NLU v1 engine](intent-builder-natural-language-understanding.html#livepersons-nlu-engine) aren’t supported.
+Prebuilt domains for the [LP NLU v1 engine](intent-builder-natural-language-understanding.html#livepersons-nlu-engine) aren’t supported.
