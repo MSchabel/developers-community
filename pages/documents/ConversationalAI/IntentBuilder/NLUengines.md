@@ -89,7 +89,7 @@ Key characteristics include:
 * Doesn't require the model to be trained, which can save time.
 * Doesn't support [prebuilt domains](intent-builder-overview.html#prebuilt-domains) or [Regular Expression entities](intent-builder-entities.html#regular-expression-entities).
 * Can't be used with Intent Analyzer.
-* Supports English and Spanish.
+* Supports English or Spanish.
 
 #### LivePerson NLU v2
 

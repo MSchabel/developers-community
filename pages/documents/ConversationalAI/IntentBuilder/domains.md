@@ -19,7 +19,7 @@ For an introduction to prebuilt domains, see [here](intent-builder-overview.html
 2. In the dashboard that lists your domains, click **Add Domain** in the upper-right corner.
 3. In the Add Domain dialog box, click the **Prebuilt Domains** tab.
 
-    **screen**
+    **Screen**
 
 4. Select the desired domain. Then click **Preview** to see a description of the domain and some sample user phrases. This helps you to verify that the domain is the one you want.
 
