@@ -45,7 +45,7 @@ Whenever the user's utterance contains one of these entity values (e.g., "I'm in
 
 * "I'm interested in `SPORTS`"
 
-Each utterance above invokes this intent.
+All three utterances above invoke this intent.
 
 The values for Value Set entities are usually one or two words, as they represent groups of simple objects.
 
