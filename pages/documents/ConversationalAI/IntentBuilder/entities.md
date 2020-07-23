@@ -52,9 +52,9 @@ The values for Value Set entities are usually one or two words, as they represen
 #### Regular Expression entities
 
 {: .important}
-Regular Expression entities are supported in only [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains only.
+Regular Expression entities are supported in only [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains.
 
-A Regular Expression entity works like a Value Set entity when it comes to entity detection and intent matching, but it doesn't have a set of values. Instead, its value is a single expression defined using [Regular Expression](https://www.regexlib.com/) rules.
+A Regular Expression entity works like a Value Set entity when it comes to entity detection and intent matching, but it doesn't have a set of values. Instead, its value is a single expression defined using [Regular Expression](https://www.regexlib.com/) rules, for example (for a 6-digit number): `^\b\d{6}\b`.
 
 Use a Regular Expression entity in situations where the possible values all conform to a specific pattern, but that list of values is so long, rendering use of a Value Set entity unfeasible. Some example use cases include:
 
@@ -109,7 +109,7 @@ You can see from the example below, that having 2 entities match the training ph
 ### Add a Regular Expression entity
 
 {: .important}
-Regular Expression entities are supported in only [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains only.
+Regular Expression entities are supported in only [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains.
 
 **To add a Regular Expression entity**
 
@@ -122,7 +122,7 @@ Regular Expression entities are supported in only [LivePerson NLU v2](intent-bui
     * **Regular Expression**: Enter the regular expression. All standard [RegEx rules](https://www.regexlib.com/) apply.
     * **Sample Values**: If the domain is using LivePerson NLU v2 or 3rd-party NLU engine, enter at least five (5) example values that conform to the regular expression. These values aren't used during entity detection; they're used during domain training to improve the model's performance. The values also serve as easy-to-read examples of the regular expression, making the expression readily understandable.
 5. Click **Save** in the lower-right corner.
-6. If the domain is using LivePerson NLU v2 or a 3rd-party NLU engine, train the domain so that the addition is reflected in a new model version.
+6. Train the domain so that the addition is reflected in a new model version.
 
 ### Using entities
 
