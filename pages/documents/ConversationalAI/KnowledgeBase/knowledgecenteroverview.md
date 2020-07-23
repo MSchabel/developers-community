@@ -89,11 +89,11 @@ When an NLU search is performed, the knowledge base's language works differently
 
 An article is either active or inactive. Active articles are returned in knowledge base searches in Knowledge Base integrations while inactive articles are not returned.
 
-An article is active if its **Enabled** advanced setting is turned on. If the enabled article doesn't have specified **Valid From** and **Valid To** dates, it is always active. If the enabled article has specified dates, it is only active during the time period specified by those dates.
+An article is active if its **Enable Article** setting is turned on. If the enabled article doesn't have specified **Valid From** and **Valid To** dates, it is always active. If the enabled article has specified dates, it is only active during the time period specified by those dates.
 
-**screen**
+<img class="fancyimage" style="width:800px" src="img/ConvoBuilder/kb_validDates.png">
 
-An article is inactive if its **Enabled** advanced setting is turned off. It is also inactive if its **Enabled** setting is turned on, but the current date and time falls outside the time period specified in the article's **Valid From** and **Valid To** dates.
+An article is inactive if its **Enable Article** setting is turned off. It is also inactive if its **Enable Article** setting is turned on, but the current date and time falls outside the time period specified in the article's **Valid From** and **Valid To** dates.
 
 #### Using Valid From/To dates for articles
 
@@ -107,6 +107,4 @@ In the Knowledge Base application, you can easily identify an article's active/i
 
 <img class="fancyimage" style="width:700px" src="img/ConvoBuilder/kb_articleStatus.png">
 
-You can also search for articles by active/inactive status:
-
-**screen**
+You can also search for articles by active/inactive status.

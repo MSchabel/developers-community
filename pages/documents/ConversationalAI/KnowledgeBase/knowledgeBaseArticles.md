@@ -29,7 +29,7 @@ An article is a focused piece of content (a message) on a single topic that you 
 
 3. If desired, click **Advanced Settings**, and specify the following:
 
-    * **Valid From** and **Valid To**: If desired, specify the dates during which the article is active. These date/time settings work in conjunction with the **Enabled** setting to determine if and when the article is active. For more on active versus inactive articles, see [here](knowledge-base-overview.html#active-versus-inactive-articles).
+    * **Valid From** and **Valid To**: If desired, specify the dates during which the article is active. These date/time settings work in conjunction with the **Enable Article** setting to determine if and when the article is active. For more on active versus inactive articles, see [here](knowledge-base-overview.html#active-versus-inactive-articles).
     * **Content**: Use this field to send a *hyperlink*. Enter the URL here, and then configure the bot with the Knowledge Base integration accordingly. For help, see the next section.
     * **Audio**:  Use this field to send an *audio* file. Enter the URL here, and then configure the bot with the Knowledge Base integration accordingly. For help, see the next section.
     * **Image**: Use this field to send an *image*. Enter the URL here, and then configure the bot with the Knowledge Base integration accordingly. For help, see the next section.
@@ -97,7 +97,7 @@ Enabled articles are returned by knowledge base searches in Knowledge Base integ
 
 1. Open the knowledge base, and display the article.
 2. Scroll down, and click **Advanced Settings**.
-3. In the **Enabled** setting, do either of the following:
+3. In the **Enable Article** setting, do either of the following:
 
     * Turn on (enable) the setting to enable the article.
     * Turn off (disable) the setting to disable the article.
