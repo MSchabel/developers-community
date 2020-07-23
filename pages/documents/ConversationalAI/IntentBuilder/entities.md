@@ -120,7 +120,7 @@ Regular Expression entities are supported in only [LivePerson NLU v2](intent-bui
     * **Entity Name**: Enter the name of the entity using alphanumeric characters (no special characters). Consider using all capital letters and underscores (instead of spaces) as a convention; this makes the entities readily visible when they are used in intents and knowledge bases.
     * **Entity Type**: Select "Regular Expression."
     * **Regular Expression**: Enter the regular expression. All standard [RegEx rules](https://www.regexlib.com/) apply.
-    * **Sample Values**: If the domain is using LivePerson NLU v2 or 3rd-party NLU engine, enter at least five (5) example values that conform to the regular expression. These values aren't used during entity detection; they're used during domain training to improve the model's performance. The values also serve as easy-to-read examples of the regular expression, making the expression readily understandable.
+    * **Sample Values**: Enter at least five (5) example values that conform to the regular expression. These values aren't used during entity detection; they're used during domain training to improve the model's performance. The values also serve as easy-to-read examples of the regular expression, making the expression readily understandable.
 5. Click **Save** in the lower-right corner.
 6. Train the domain so that the addition is reflected in a new model version.
 
