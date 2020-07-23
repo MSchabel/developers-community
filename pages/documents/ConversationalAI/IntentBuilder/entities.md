@@ -22,34 +22,37 @@ When a bot detects an entity value in a consumer's utterance, the bot invokes th
 There are three types of entities:
 
 * Value Set entities
-* Regular Expression entities
+* Regular Expression entities (Supported in [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains only)
 * Built-in entities
 
 ### Types of entities
 
 #### Value Set entities
 
-As their name suggests, Value Set entities are those that have a defined set of values. For instance, the entity `sports` might have the following values in its value set:
+As their name suggests, Value Set entities are those that have a defined set of values. For instance, the entity `SPORTS` might have the following values in its value set:
 
 * walking
 * running
 * football
 
-Whenever the user's utterance contains one of these entity values (e.g., "I'm interested in running"), the bot detects this, invokes the `sports` entity, and substitutes it into the utterance before determining the consumer's intent. This means, when you add training phrases for the intent, instead of adding these...
+Whenever the user's utterance contains one of these entity values (e.g., "I'm interested in running"), the bot detects this, invokes the `SPORTS` entity, and substitutes it into the utterance before determining the consumer's intent. This means, when you add training phrases for the intent, instead of adding these...
 
 * "I'm interested in walking"
 * "I'm interested in jogging"
 * "I'm interested in running"
 
-...you can add a single training phrase that uses the `sports` entity:
+...you can add a single training phrase that uses the `SPORTS` entity:
 
-* "I'm interested in `sports`"
+* "I'm interested in `SPORTS`"
 
 Each utterance above invokes this intent.
 
 The values for Value Set entities are usually one or two words, as they represent groups of simple objects.
 
 #### Regular Expression entities
+
+{: .important}
+Regular Expression entities are supported in only [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains only.
 
 A Regular Expression entity works like a Value Set entity when it comes to entity detection and intent matching, but it doesn't have a set of values. Instead, its value is a single expression defined using [Regular Expression](https://www.regexlib.com/) rules.
 
@@ -61,23 +64,25 @@ Use a Regular Expression entity in situations where the possible values all conf
 
 #### Built-in entities
 
-The platform automatically detects the entities listed below. Using the [Assist](conversation-builder-assist.html) tool, you can assign these default entities to user interactions and have the bot populate a [slot](conversation-builder-conversation-builder-variables-slots.html#slots) with the user's input to the question to which the entity was assigned.
+The platform automatically detects the entities listed below. 
 
-* PERSON - Names of people, persons.
+Using the [Assist](conversation-builder-assist.html) tool, you can assign these default entities to user interactions and have the bot populate a [slot](conversation-builder-conversation-builder-variables-slots.html#slots) with the user's input to the question to which the entity was assigned.
 
-* ORGANIZATION - Names of institutions.
+* PERSON - Names of people, persons
 
-* NUMBER - Numbers in a sentence (pure number).
+* ORGANIZATION - Names of institutions
 
-* MONEY -  Numbers with currency ($2000).
+* NUMBER - Numbers in a sentence (pure number)
 
-* DURATION - Time periods.
+* MONEY -  Numbers with currency ($2000)
 
-* SET - Group (example month, week).
+* DURATION - Time periods
 
-* ORDINAL - A number used in the context of order. 15th, 10th etc are examples.
+* SET - Group (example month, week)
 
-* DATE - Date related, Today, Tomorrow or explicit dates such as 03/01/2017.
+* ORDINAL - A number used in the context of order. 15th, 10th, etc., are examples.
+
+* DATE - Date-related. Today, Tomorrow or explicit dates such as 03/01/2017
 
 ### How entities affect the NLU score
 
@@ -103,6 +108,9 @@ You can see from the example below, that having 2 entities match the training ph
 
 ### Add a Regular Expression entity
 
+{: .important}
+Regular Expression entities are supported in only [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains only.
+
 **To add a Regular Expression entity**
 
 1. Open the domain.
@@ -112,7 +120,7 @@ You can see from the example below, that having 2 entities match the training ph
     * **Entity Name**: Enter the name of the entity using alphanumeric characters (no special characters). Consider using all capital letters and underscores (instead of spaces) as a convention; this makes the entities readily visible when they are used in intents and knowledge bases.
     * **Entity Type**: Select "Regular Expression."
     * **Regular Expression**: Enter the regular expression. All standard [RegEx rules](https://www.regexlib.com/) apply.
-    * **Sample Values**: If the domain is using LivePerson NLU v2 or 3rd-party NLU engine, enter at least five (5) example values that conform to the regular expression. These values aren't used during entity detection; they're used during domain training to improve the model's performance.
+    * **Sample Values**: If the domain is using LivePerson NLU v2 or 3rd-party NLU engine, enter at least five (5) example values that conform to the regular expression. These values aren't used during entity detection; they're used during domain training to improve the model's performance. The values also serve as easy-to-read examples of the regular expression, making the expression readily understandable.
 5. Click **Save** in the lower-right corner.
 6. If the domain is using LivePerson NLU v2 or a 3rd-party NLU engine, train the domain so that the addition is reflected in a new model version.
 
