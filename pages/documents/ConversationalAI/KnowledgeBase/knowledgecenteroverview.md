@@ -95,16 +95,12 @@ An article is active if its **Enable Article** setting is turned on. If the enab
 
 An article is inactive if its **Enable Article** setting is turned off. It is also inactive if its **Enable Article** setting is turned on, but the current date and time falls outside the time period specified in the article's **Valid From** and **Valid To** dates.
 
-#### Using Valid From/To dates for articles
-
-Specifying **Valid From** and **Valid To** dates for an article is optional. It lets you control not only when an article becomes active, but also if and when it expires. For example, you might run a promotion over a holiday that has an associated FAQ, and that FAQ should only be used for a specific, finite period of time. Or, you might have an article that you want to become active on specific date and remain so indefinitely.
-
-To specify a finite time period, use both date settings. To specify an open-ended date range, such that the article remains active indefinitely once it becomes active, omit the **Valid To** date. To activate an article immediately after you add it, omit the **Valid From** date.
-
-#### Identifying an article's status
-
-In the Knowledge Base application, you can easily identify an article's active/inactive status:
+In the Knowledge Base application, you can easily identify an article's status:
 
 <img class="fancyimage" style="width:700px" src="img/ConvoBuilder/kb_articleStatus.png">
 
-You can also search for articles by active/inactive status.
+#### Using Valid From and Valid To dates
+
+Specifying **Valid From** and **Valid To** dates for an article is optional. It lets you control not only when an article becomes active, but also if and when it expires.
+
+For example, you might run a promotion over a holiday that has an associated FAQ, and that FAQ should only be used for a specific, finite period of time. Or, you might have an article that you want to become active on a certain date and remain so indefinitely. You can accomplish this by specifying the pertinent dates.
