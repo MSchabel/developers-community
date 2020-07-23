@@ -83,7 +83,7 @@ Conversely, if you've been using Bot Studio to create and manage survey bots, pl
     * **Name**: Enter a name for the bot that's concise and clear.
     * **Description**: Enter a description that's meaningful to you and others. 
     * **Bot Language**: Select a language.
-    * **Skill**: Select the skill(s) that will trigger this survey bot. A skill can be assigned to only one survey bot.
+    * **Skill**: Select the skill(s) that will trigger this survey bot. A skill can be assigned to only one survey bot. You can add skills in Conversational Cloud.
 5. Click **Create Bot**.
 
     This creates a survey bot that includes a single dialog of type "Survey" (that's also named "survey" by default). Define the survey in this dialog.
