@@ -36,6 +36,22 @@ The following are key characteristics of a domain:
 * A domain has a specified NLU provider and language.
 * In a bot, you can associate one domain with each dialog. This allows you to associate the dialog's interactions with intents and entities from that domain. For example, you might [associate an intent with a Dialog Starter interaction](conversation-builder-assist.html) to use the intent to trigger the dialog's flow.
 
+
+#### Prebuilt domains
+
+To get you quickly up and running with [intents](intent-builder-intents.html), LivePerson provides a set of prebuilt domains that you can easily add to your Intent Builder environment. A prebuilt domain is a ready-made domain that includes a set of well-defined, predefined intents. There are two kinds of prebuilt domains available:
+
+* Generic, prebuilt domains for a number of verticals: Telecommunications, Financial Services, and more.
+* Cross-vertical, prebuilt domains that are appropriate for all verticals. These include domains for things like account management, billing and payment, “small talk,” and more.
+
+Once you [add a prebuilt domain](intent-builder-domains.html#add-a-prebuilt-domain), you can customize the domain as you see fit. It behaves like any other you might create manually or via an import file.
+
+If you want a quick, low effort way to get up and running with well-defined intents, LivePerson recommends that you get started by taking advantage of prebuilt domains.
+
+{: .important}
+Prebuilt domains for the [LP NLU v1 engine](intent-builder-natural-language-understanding.html#livepersons-nlu-engine) aren’t supported.
+
+
 #### Training
 
 Domains that use either the LivePerson NLU v2 engine or a 3rd-party NLU engine must be explicitly trained (i.e., you click the **Train** button that's available). This process takes the raw training data and uses it to create a “machine-learning” model that generalizes the data. The resulting model is then used to make predictions on user utterances. With these NLU engines, most of the work needed to be able to make predictions on user utterances is performed *at training time*, allowing for a faster response at run time.
@@ -57,19 +73,3 @@ When working in Intent Builder, you’ll use one of the following high-level wor
 There are some iterative steps in each workflow.
 
 If the domain is using a 3rd-party NLU engine, you'll need to [connect the NLU engine](intent-builder-natural-language-understanding.html#connect-a-3rd-party-nlu-engine) before you train.
-
-### Prebuilt domains
-
-To get you quickly up and running with [intents](intent-builder-intents.html), LivePerson provides a set of prebuilt domains that you can easily add to your Intent Builder environment. A prebuilt domain is a ready-made domain that includes a set of well-defined, predefined intents. There are two kinds of prebuilt domains available:
-
-* Generic, prebuilt domains for a number of verticals: Telecommunications, Financial Services, and more.
-* Cross-vertical, prebuilt domains that are appropriate for all verticals. These include domains for things like account management, billing and payment, “small talk,” and more.
-
-**Screen**
-
-Once you [add a prebuilt domain](intent-builder-domains.html#add-a-prebuilt-domain), you can customize the domain as you see fit. It behaves like any other you might create manually or via an import file.
-
-If you want a quick, low effort way to get up and running with well-defined intents, LivePerson recommends that you get started by taking advantage of prebuilt domains.
-
-{: .important}
-Prebuilt domains for the [LP NLU v1 engine](intent-builder-natural-language-understanding.html#livepersons-nlu-engine) aren’t supported.
