@@ -56,7 +56,7 @@ Regular Expression entities are supported in only [LivePerson NLU v2](intent-bui
 
 A Regular Expression entity works like a Value Set entity when it comes to entity detection and intent matching, but it doesn't have a set of values. Instead, its value is a single expression defined using [Regular Expression](https://www.regexlib.com/) rules, for example (for a 6-digit number): `^\b\d{6}\b`.
 
-Use a Regular Expression entity in situations where the possible values all conform to a specific pattern, but that list of values is so long, rendering use of a Value Set entity unfeasible. Some example use cases include:
+Use a Regular Expression entity in situations where the possible entity values all conform to a specific pattern, but that list of values is so long, rendering use of a Value Set entity unfeasible. Some example use cases include:
 
 * Flight numbers
 * Order numbers
@@ -64,9 +64,7 @@ Use a Regular Expression entity in situations where the possible values all conf
 
 #### Built-in entities
 
-The platform automatically detects the entities listed below. 
-
-Using the [Assist](conversation-builder-assist.html) tool, you can assign these default entities to user interactions and have the bot populate a [slot](conversation-builder-conversation-builder-variables-slots.html#slots) with the user's input to the question to which the entity was assigned.
+The platform automatically detects the entities listed below: 
 
 * PERSON - Names of people, persons
 
@@ -84,11 +82,13 @@ Using the [Assist](conversation-builder-assist.html) tool, you can assign these 
 
 * DATE - Date-related. Today, Tomorrow or explicit dates such as 03/01/2017
 
+Using the [Assist](conversation-builder-assist.html) tool, you can assign these built-in entities to user interactions and have the bot populate a [slot](conversation-builder-conversation-builder-variables-slots.html#slots) with the user's input to the question to which the entity was assigned.
+
 ### How entities affect the NLU score
 
 The more entities in a training phrase that match, the higher the score. This can be a powerful way to increase your matching accuracy, but if overused, can lead to a lot of false positives.
 
-You can see from the example below, that having 2 entities match the training phrases causes a 30% jump in score from the single entity matches. So use them for the really key elements of your intent, but don’t overuse.
+You can see from the example below, that having 2 entities match the training phrases causes a 30% jump in score from the single entity matches. So use them for the key elements of your intent, but don’t overuse.
 
 <img class="fancyimage" style="width:400px" src="img/testuserinput.png">
 
