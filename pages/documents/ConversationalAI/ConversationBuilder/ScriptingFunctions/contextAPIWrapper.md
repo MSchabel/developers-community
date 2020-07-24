@@ -32,14 +32,12 @@ New to scripting functions? Please review the [Introduction](conversation-builde
 **To enable the Context Session Store API for your account**
 
 1. Access the *Bot Accounts* application, and click the organization name.
-2. Click <img style="width:25px" src="img/ConvoBuilder/icon_editAccount.png"> in the upper-right corner.
-3. If necessary, click **More Settings** to show additional settings.
-4. Beside **Enable Context API**, click the slider to turn it on, i.e., enable the setting.
-5. Select one of the following for retrieving the necessary Conversation Orchestrator credentials:
+2. Beside **Enable Context API**, click the slider to turn it on, i.e., enable the setting.
+3. Select one of the following for retrieving the necessary Conversation Orchestrator credentials:
     * **Use Conversational Cloud Site Id** (Only available for LivePerson accounts.)
     * **Use Conversation Builder Account Id** (This is your organization ID.)
-6. Enter the ID for your selection in step 5.
-7. Click **Update Account**.
+4. Enter the ID for your selection in step 5.
+5. Click **Update Account**.
 
 #### Conversation Builder data scopes
 
