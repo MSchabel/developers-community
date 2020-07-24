@@ -95,7 +95,7 @@ An article is active if its **Enable Article** setting is turned on. If an enabl
 
 If no dates are specified, an enabled article is always active.
 
-An article is inactive if its **Enable Article** setting is turned off. It's also inactive if the setting is turned on, but the current date and time in UTC falls outside the specified time period.
+An article is inactive if its **Enable Article** setting is turned off. It's also inactive if the setting is turned on, but the current date and time in UTC falls outside the time period specified by **Valid From** and **Valid To**.
 
 In the Knowledge Base application, you can easily identify an article's current status:
 
@@ -103,6 +103,6 @@ In the Knowledge Base application, you can easily identify an article's current 
 
 #### Using Valid From and Valid To dates
 
-It's optional to specify **Valid From** and **Valid To** dates when you [add an article](knowledge-base-articles.html#add-an-article). However, it does let you control not only when the article becomes active, but also if and when it becomes inactive.
+Specify **Valid From** and **Valid To** dates when you [add an article](knowledge-base-articles.html#add-an-article) when you want to control when the article becomes active, and if and when it becomes inactive.
 
 For example, you might run a promotion over a holiday that has an associated FAQ, and that FAQ should only be used for a finite period of time. Or, you might have an article that you want to become active on a certain date and remain so indefinitely. You can satisfy requirements like these with the **Valid From** and/or **Valid To** date fields.
