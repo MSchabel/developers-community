@@ -53,9 +53,7 @@ This tutorial is designed to familiarize you with Knowledge Base.
     
     Manually added articles are inactive by default because the **Enable Article** setting is turned off by default. This is to give you the opportunity to test the article before enabling it.
     
-    For the purposes of this tutorial, the inactive status is fine, as this tutorial doesn't get into use in an Knowledge Base integration.
-
-    For more on active versus inactive artcles, see [here](knowledge-base-overview.html#active-versus-inactive-articles). For information on how to enable the article, see [here](knowledge-base-articles.html#enable-or-disable-an-article).
+    For the purposes of this tutorial, the inactive status is fine, as this tutorial doesn't get into use in an Knowledge Base integration. For more on active versus inactive artcles, see [here](knowledge-base-overview.html#active-versus-inactive-articles). For information on how to enable the article, see [here](knowledge-base-articles.html#enable-or-disable-an-article).
 
 ### Step 3: Train and tune
 
@@ -104,7 +102,8 @@ Leveraging entities within a knowledge base provides the same benefits that doin
 
 1. Inside the domain you just created, click **Entities** in the upper-left corner.
 2. In the Add Entity panel, specify the following:
-    * **Entity name**: Enter "credentials."
+    * **Entity name**: Enter "CREDENTIALS."
+    * **Entity type**: Select "Value Set," which is the default.
     * **Entity values**: Add the values below:
         * `log in`
         * `login`
@@ -114,7 +113,7 @@ Leveraging entities within a knowledge base provides the same benefits that doin
         * `username`
         * `pin`
 
-3. Click **Add Entity**.
+3. Click **Save**.
 
 #### Connect the domain to the knowledge base
 

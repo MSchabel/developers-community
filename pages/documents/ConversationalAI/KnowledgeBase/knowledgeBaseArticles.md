@@ -115,7 +115,7 @@ If you don’t want the follow-up text search, you can change the Search Setting
 
 If you ONLY want to perform the text search, you can set the Settings to "All".
 
-To add more training phrases (or intent qualifiers), you can manually add them to your article.
+To add more training phrases (intent qualifiers), you can manually add them to your article.
 
 <img class="fancyimage" style="width:700px" src="img/qualifiers.png">
 
@@ -187,7 +187,7 @@ If you're just getting started with knowledge bases and want to try using this t
 3. In the Tags panel, select the tag to highlight it. You can repeat this step as needed if you're looking for articles assigned to multiple tags.
     
     The result list is updated to include only the articles with the selected tags.
-    <img class="fancyimage" style="width:750px" src="img/ConvoBuilder/kb_findWithTag.png">
+    <img class="fancyimage" style="width:800px" src="img/ConvoBuilder/kb_findWithTag.png">
 
 ### Find articles assigned to a specific category
 
@@ -196,7 +196,7 @@ If you're just getting started with knowledge bases and want to try using this t
 3. In the Categories panel, select the category to highlight it. You can repeat this step as needed if you're looking for articles assigned to multiple categories.
     
     The result list is updated to include only the articles assigned to the selected categories.
-    <img class="fancyimage" style="width:750px" src="img/ConvoBuilder/kb_findInCategory.png">
+    <img class="fancyimage" style="width:800px" src="img/ConvoBuilder/kb_findInCategory.png">
 
 ### JSON reference
 
