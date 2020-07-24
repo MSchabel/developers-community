@@ -12,9 +12,9 @@ indicator: both
 
 ### What's an entity?
 
-Entities are keywords that represent groups of items. For example, an entity named `SIZE` might represent the following values: small, medium, and large.
+Entities are keywords or expressions that represent groups of items. For example, an entity named `SIZE` might represent the following values: small, medium, and large.
 
-When a bot detects an entity value in a consumer's utterance, the bot invokes the associated entity, substituting it into the utterance before determining the consumer's intent. Therefore, you can use entities in two places:
+In a conversation, when a bot detects an entity value in a consumer's utterance, the bot invokes the associated entity, substituting it into the utterance before determining the consumer's intent. Therefore, you can use entities in two places:
 
 * Training phrases for intents defined in [Intent Builder](intent-builder-overview.html) 
 * Intent qualifiers for articles defined in [Knowledge Base](knowledge-base-overview.html)
@@ -120,7 +120,7 @@ Regular Expression entities are supported in only [LivePerson NLU v2](intent-bui
     * **Entity Name**: Enter the name of the entity using alphanumeric characters (no special characters). Consider using all capital letters and underscores (instead of spaces) as a convention; this makes the entities readily visible when they are used in intents and knowledge bases.
     * **Entity Type**: Select "Regular Expression."
     * **Regular Expression**: Enter the regular expression. All standard [RegEx rules](https://www.regexlib.com/) apply.
-    * **Sample Values**: Enter at least five (5) example values that conform to the regular expression. These values aren't used during entity detection; they're used during domain training to improve the model's performance. The values also serve as easy-to-read examples of the regular expression, making the expression readily understandable.
+    * **Sample Values**: Enter at least five (5) example values that conform to the regular expression. These values aren't used during entity detection; they're used during domain training to improve the model's performance. Within Intent Builder, the values also serve as easy-to-read examples of the regular expression, making the expression more understandable at a glance.
 5. Click **Save** in the lower-right corner.
 6. Train the domain so that the addition is reflected in a new model version.
 
