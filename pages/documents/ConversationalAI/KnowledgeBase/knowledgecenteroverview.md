@@ -87,20 +87,22 @@ When an NLU search is performed, the knowledge base's language works differently
 
 ### Active versus inactive articles
 
-An article is either active or inactive. Active articles are returned in knowledge base searches in Knowledge Base integrations while inactive articles are not returned.
+An article is either active or inactive. Active articles are returned in knowledge base searches in Knowledge Base integrations while inactive articles aren't returned.
 
-An article is active if its **Enable Article** setting is turned on. If the enabled article doesn't have specified **Valid From** and **Valid To** dates, it is always active. If the enabled article has specified dates, it is only active during the time period specified by those dates.
+An article is active if its **Enable Article** setting is turned on. If an enabled article has **Valid From** and **Valid To** dates (specified in UTC), it is only active during that time period.
 
 <img class="fancyimage" style="width:800px" src="img/ConvoBuilder/kb_validDates.png">
 
-An article is inactive if its **Enable Article** setting is turned off. It is also inactive if its **Enable Article** setting is turned on, but the current date and time falls outside the time period specified in the article's **Valid From** and **Valid To** dates.
+If no dates are specified, an enabled article is always active.
 
-In the Knowledge Base application, you can easily identify an article's status:
+An article is inactive if its **Enable Article** setting is turned off. It's also inactive if the setting is turned on, but the current date and time in UTC falls outside the specified time period.
+
+In the Knowledge Base application, you can easily identify an article's current status:
 
 <img class="fancyimage" style="width:700px" src="img/ConvoBuilder/kb_articleStatus.png">
 
 #### Using Valid From and Valid To dates
 
-Specifying **Valid From** and **Valid To** dates for an article is optional. It lets you control not only when an article becomes active, but also if and when it expires.
+It's optional to specify **Valid From** and **Valid To** dates when you [add an article](knowledge-base-articles.html#add-an-article). However, it does let you control not only when the article becomes active, but also if and when it becomes inactive.
 
-For example, you might run a promotion over a holiday that has an associated FAQ, and that FAQ should only be used for a specific, finite period of time. Or, you might have an article that you want to become active on a certain date and remain so indefinitely. You can accomplish this by specifying the pertinent dates.
+For example, you might run a promotion over a holiday that has an associated FAQ, and that FAQ should only be used for a finite period of time. Or, you might have an article that you want to become active on a certain date and remain so indefinitely. You can satisfy requirements like these with the **Valid From** and/or **Valid To** date fields.
