@@ -88,7 +88,7 @@ Key characteristics include:
     * Supports a maximum of 20 positive learnings per Knowledge Base article. If you add more than 20, only the first 20 are used. There is no limit on the number of negative learnings; however, see the best practices discussed [here](knowledge-base-articles.html#best-practices).
 * Doesn't require the model to be trained, which can save time.
 * Doesn't support [prebuilt domains](intent-builder-overview.html#prebuilt-domains).
-* Can't be used with Intent Analyzer.
+* Can't be used with [Intent Analyzer](intent-analyzer-overview.html).
 * Supports English or Spanish.
 
 #### LivePerson NLU v2
@@ -103,7 +103,7 @@ Key characteristics include:
     * At least 20 training phrases per intent
     * At least 5 intents in order to train
 * Requires the model to be [trained](intent-builder-domains.html#train-a-liveperson-nlu-v2-domain).
-* Can be used with Intent Analyzer.
+* Can be used with [Intent Analyzer](intent-analyzer-overview.html).
 * Supports English.
 
 ### Connect a 3rd-party NLU engine
