@@ -53,7 +53,7 @@ The values for Value Set entities are usually one or two words, as they represen
 
 A Regular Expression entity works like a Value Set entity when it comes to entity detection and intent matching, but it doesn't have a set of values. Instead, its value is a single expression defined using [Regular Expression](https://www.regexlib.com/) rules, for example (for a 6-digit number): `^\b\d{6}\b`.
 
-Use a Regular Expression entity in situations where the possible entity values all conform to a specific pattern, but that list of values is so long, rendering use of a Value Set entity unfeasible. Some example use cases include:
+Use a Regular Expression entity in situations where the possible entity values all conform to a specific pattern, but that list of values is so long that it renders use of a Value Set entity unfeasible. Some example use cases include:
 
 * Flight numbers
 * Order numbers
