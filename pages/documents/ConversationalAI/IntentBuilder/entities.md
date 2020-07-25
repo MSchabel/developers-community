@@ -22,7 +22,7 @@ In a conversation, when a bot detects an entity value in a consumer's utterance,
 There are three types of entities:
 
 * Value Set entities
-* Regular Expression entities (Supported in only [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains)
+* Regular Expression entities
 * Built-in entities
 
 ### Types of entities
@@ -50,9 +50,6 @@ All three utterances above invoke this intent.
 The values for Value Set entities are usually one or two words, as they represent groups of simple objects.
 
 #### Regular Expression entities
-
-{: .important}
-Regular Expression entities are supported in only [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains.
 
 A Regular Expression entity works like a Value Set entity when it comes to entity detection and intent matching, but it doesn't have a set of values. Instead, its value is a single expression defined using [Regular Expression](https://www.regexlib.com/) rules, for example (for a 6-digit number): `^\b\d{6}\b`.
 
@@ -107,9 +104,6 @@ You can see from the example below, that having 2 entities match the training ph
 6. If the domain is using LivePerson NLU v2 or a 3rd-party NLU engine, train the domain so that the addition is reflected in a new model version.
 
 ### Add a Regular Expression entity
-
-{: .important}
-Regular Expression entities are supported in only [LivePerson NLU v2](intent-builder-natural-language-understanding.html#liveperson-nlu-v2) domains.
 
 **To add a Regular Expression entity**
 

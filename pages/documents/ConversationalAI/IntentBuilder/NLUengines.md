@@ -87,7 +87,7 @@ Key characteristics include:
     * Supports a maximum of 40 training phrases per intent. If you add more than 40, only the first 40 are used.
     * Supports a maximum of 20 positive learnings per Knowledge Base article. If you add more than 20, only the first 20 are used. There is no limit on the number of negative learnings; however, see the best practices discussed [here](knowledge-base-articles.html#best-practices).
 * Doesn't require the model to be trained, which can save time.
-* Doesn't support [prebuilt domains](intent-builder-overview.html#prebuilt-domains) or [Regular Expression entities](intent-builder-entities.html#regular-expression-entities).
+* Doesn't support [prebuilt domains](intent-builder-overview.html#prebuilt-domains).
 * Can't be used with Intent Analyzer.
 * Supports English or Spanish.
 
@@ -110,7 +110,6 @@ Key characteristics include:
 
 #### 3rd-party NLU limitations
 
-- [Regular Expression entities](intent-builder-entities.html#regular-expression-entities) aren't supported in domains using a 3rd-party NLU engine.
 - The length of the domain name should not exceed 64 characters. (Watson limitation)
 - A domain can only support one language, which is specified on the Domain Settings page.
 - LivePerson does not support "pulling" into Intent Builder existing models that have been trained in IBM Watson or Google Dialogflow. Only model "push" is supported; this is accomplished by training the model in Intent Builder.
