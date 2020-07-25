@@ -42,28 +42,6 @@ botContext.printDebugMessage("channel used by the user is: " + channel);
 ```
 
 
-### Get user platform type
-Returns the type of platform that the user is currently communicating on. This function returns:
-
-* SMS
-* INAPP (for In-app SDK)
-* FACEBOOK
-* ABC (for Apple Business Chat)
-* RCS
-* WHATSAPP
-
-| Function Name | Arguments | Returns |
-| --- | --- | --- |
-| `getUserPlatformType()` | None | SMS, INAPP, FACEBOOK, ABC, RCS, or WHATSAPP |
-
-#### Example
-
-```javascript
-var channel = botContext.getUserPlatformType();
-botContext.printDebugMessage("channel used by the user is: " + channel);
-```
-
-
 ### Get user platform ID
 
 Get User Platform Id is used to get the user’s unique platform ID.
