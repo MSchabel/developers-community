@@ -159,13 +159,13 @@ Examples of invalid anchor tags:
 * `<a href="http://example.com/test.jpg" onmouseover="alert('test')”>`
 * `<a onmouseover="alert('test')" href="http://example.com/test.jpg">`
 
-#### Line Breaks
+#### Line breaks
 CTRL+ENTER - Hold control and hit enter/return.
 
 {: .important}
 This does not render when using the the Preview tool inside Conversation Builder. You will not see line breaks in the preview tool.
 
-#### Character Limit
+#### Character limit
 
 One single text interaction has a limit of 320 characters on the word boundary before it gets split into 2 parts. However, you can override this behavior with the [setAllowMaxTextResponse](conversation-builder-scripting-functions-manage-conversation-flow.html#set-allow-max-text-response) scripting function.
 
