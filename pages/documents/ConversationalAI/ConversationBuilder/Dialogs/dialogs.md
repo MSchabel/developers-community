@@ -62,7 +62,7 @@ To disable context switching at the conversation start, you can add this code to
 
 3. Specify the following:
     - **Dialog Name**: Enter a descriptive name for the dialog. Use a standard naming convention to make your dialogs more sortable and easier to find.
-    - **Description**: (Optional) Enter a brief description of the dialog's purpose. (The description is displayed in the user interface for importing dialogs, discussed below, to help bot developers make decisions on which dialogs to select to import.)
+    - **Description**: (Optional) Enter a brief description of the dialog's purpose. The description is displayed in the user interface for importing dialogs, discussed below, to help bot developers make decisions on which dialogs to select to import.
     - **Dialog Type**: Select the type of dialog; for help with this, see *Dialog types* farther above on this page.
 4. Click **Save**.
 5. Build out the dialog as per your requirements.
