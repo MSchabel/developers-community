@@ -57,15 +57,12 @@ To disable context switching at the conversation start, you can add this code to
 1. Open the bot.
 2. In the lower-left corner, click **Add Dialog**.
 3. In the Add Dialog window, select the **New Dialog** tab.
-
-    <img class="fancyimage" style="width:600px" src="img/ConvoBuilder/dialogs_create1.png">
-
-3. Specify the following:
+4. Specify the following:
     - **Dialog Name**: Enter a descriptive name for the dialog. Use a standard naming convention to make your dialogs more sortable and easier to find.
     - **Description**: (Optional) Enter a brief description of the dialog's purpose. The description is displayed in the user interface for importing dialogs, discussed below, to help bot developers make decisions on which dialogs to select to import.
     - **Dialog Type**: Select the type of dialog; for help with this, see *Dialog types* farther above on this page.
-4. Click **Save**.
-5. Build out the dialog as per your requirements.
+5. Click **Save**.
+6. Build out the dialog as per your requirements.
 
 
 ### Import a dialog
