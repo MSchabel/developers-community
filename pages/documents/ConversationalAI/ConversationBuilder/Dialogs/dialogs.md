@@ -102,23 +102,14 @@ When you import dialogs, consider any dependencies across the dialogs. Before or
 
     The selected dialogs are imported.
 
-    During the import,  the **Next Action** for each interaction is maintained whenever possible. If you received any errors, this is because you imported a dialog that referenced another dialog that you didn’t also import. In this case, the **Next Action** in the interaction in the imported dialog must be updated, and you are shown an error message to inform you of this.
-
-    <img class="fancyimage" style="width:400px" src="img/ConvoBuilder/dialogs_import2.png">
-
-    You can resolve this by choosing another next action, or by importing the relevant dialog and updating the next action accordingly.
-    
-    You might also want to rename the imported dialogs, interactions, and integrations. They are given standard names based on the element name and destination bot name. 
+    You might want to rename the imported dialogs, interactions, and integrations. They are given standard names based on the element name and destination bot name. 
 
 
 ### Duplicate a dialog
 
 You can duplicate a dialog that is of type Dialog. This can be useful when you have a well-defined dialog that you want to quickly and easily reuse in the same bot.
 
-During the import:
-
-* The order of the interactions is maintained.
-* The associations of domains, intents, and entities to interactions are maintained.
+During the import, the associations of domains, intents, and entities to interactions are maintained.
 
 **To duplicate a dialog**
 
