@@ -107,9 +107,7 @@ When you import dialogs, consider and address any dependencies across the dialog
 
 ### Duplicate a dialog
 
-You can duplicate a dialog that is of type Dialog. This can be useful when you have a well-defined dialog that you want to quickly and easily reuse in the same bot.
-
-During the import, the associations of domains, intents, and entities to interactions are maintained.
+You can duplicate a dialog that is of type Dialog. This can be useful when you have a well-defined dialog that you want to quickly and easily reuse in the same bot. During the import, the associations of domains, intents, and entities to interactions are maintained.
 
 **To duplicate a dialog**
 
