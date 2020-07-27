@@ -71,7 +71,7 @@ Additionally, having said the above, the following, simplified format also works
 
 The following illustrates a well-formatted entities file:
 
-<img class="fancyimage" style="width:700px" src="img/ConvoBuilder/ib_importFile_entities.png">
+<img class="fancyimage" style="width:500px" src="img/ConvoBuilder/ib_importFile_entities.png">
 
 If you're creating a Google sheet, add the intents to the first tab in the sheet, and name the tab "Intents." Then add the entities to a second tab named "Entities." The Google sheet must be public, i.e., with no file restrictions in place.
 
