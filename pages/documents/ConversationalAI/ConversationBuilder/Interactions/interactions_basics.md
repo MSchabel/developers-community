@@ -38,13 +38,28 @@ For information on which interactions are supported in which channels, see [here
 
 The types of text that you can send in a Conversation Builder interaction vary depending on whether you're building a bot for **Chat** or for **Messaging**.
 
-**Messaging** only allows plain text to be sent.
+**Messaging** only allows plain text to be sent. 
 
-**Chat** allows for plain text as well as a subset of HTML limited to the anchor, paragraph and linebreak tags.
+**Chat** allows for plain text and a subset of HTML limited to the paragraph, linebreak and anchor tags:
 
-* `<a href=""></a>`
 * `<p></p>`
 * `<br>`
+* `<a href=""></a>`
+
+Examples of valid anchor tags:
+
+* `<a href="http://example.com/test.jpg">`
+* `<a href="http://example.com/1$2324%342523">`
+* `<a href="{$botcontext.host}/test.jpg">`
+* `<a href="http://example.com/{$botcontext.fileName}">`
+* `<a href="{$botcontext.link}”>`
+
+Examples of invalid anchor tags:
+
+* `<a href="javascript: alert(’test’)">`
+* `<a href="http://example.com/test.jpg" onmouseover="alert('test')”>`
+* `<a onmouseover="alert('test')" href="http://example.com/test.jpg">`
+
 
 ### Whitelisting
 
