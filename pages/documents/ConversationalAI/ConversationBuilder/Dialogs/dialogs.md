@@ -80,13 +80,14 @@ Note the following:
 * The following is imported:  
     * All selected dialogs and the interactions therein.
     * All integrations referenced in the selected dialogs.
-* During the import:
-    * The order of the interactions is maintained.
-    * The associations of domains, intents, and entities to interactions are maintained.
+* During the import, the associations of domains, intents, and entities to interactions are maintained.
 * If you import a dialog that uses a knowledge base integration, and that knowledge base is owned by another bot developer and isn't [public](knowledge-base-knowledge-bases.html#configure-knowledge-base-settings), you can still use the integration in the bot, but you can't view or edit that knowledge base in the Knowledge Base application.
 
-{: .important}
-When you import dialogs, consider any dependencies across the dialogs. You might or might not want to import all referenced dialogs.
+When you import dialogs, consider any dependencies across the dialogs. Before or after the import, verify proper conversation flow by checking the following in the interactions in the relevant dialogs:
+
+* Next Action values
+* JavaScript code
+* Environment variables
 
 **To import one or more dialogs into a bot**
 
@@ -101,13 +102,11 @@ When you import dialogs, consider any dependencies across the dialogs. You might
 
     The selected dialogs are imported.
 
-6. In the imported dialogs, review the **Next Action**, JavaScript code, and environment variables used in the interactions to verify proper conversation flow.
-
-    During the import,  the **Next Action** for each interaction is maintained whenever possible. If you received any errors, this is because you imported a dialog that referenced another dialog that you didn’t also import. In this case, the **Next Action** in the interaction in the imported dialog is cleared, and you are shown an error message to inform you of this.
+    During the import,  the **Next Action** for each interaction is maintained whenever possible. If you received any errors, this is because you imported a dialog that referenced another dialog that you didn’t also import. In this case, the **Next Action** in the interaction in the imported dialog must be updated, and you are shown an error message to inform you of this.
 
     <img class="fancyimage" style="width:400px" src="img/ConvoBuilder/dialogs_import2.png">
 
-    To resolve this, choose another next action, or import the relevant dialog and update the next action accordingly.
+    You can resolve this by choosing another next action, or by importing the relevant dialog and updating the next action accordingly.
     
     You might also want to rename the imported dialogs, interactions, and integrations. They are given standard names based on the element name and destination bot name. 
 
