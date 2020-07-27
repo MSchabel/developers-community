@@ -36,7 +36,7 @@ For information on which interactions are supported in which channels, see [here
 
 #### Limitations regarding types of text
 
-The types of text that you can send in a Conversation Builder interaction vary depending if you are building a bot for **chat** or for **messaging**.
+The types of text that you can send in a Conversation Builder interaction vary depending on whether you're building a bot for **Chat** or for **Messaging**.
 
 **Messaging** only allows plain text to be sent.
 
