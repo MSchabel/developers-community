@@ -95,12 +95,12 @@ You can see from the example below, that having 2 entities match the training ph
 
 1. Open the domain.
 2. In the upper-left corner, click **Entities**.
-3. Click **Add Entity** in the upper-right corner.
+3. In the upper-right corner, click **Add Entity**.
 4. Specify the following:
     * **Entity Name**: Enter the name of the entity using alphanumeric characters (no special characters). Consider using all capital letters and underscores (instead of spaces) as a convention; this makes the entities readily visible when they are used in intents and knowledge bases.
     * **Entity Type**: Select "Value Set."
     * **Entity Values**: Enter each entity value.
-5. Click **Save** in the lower-right corner.
+5. Click **Save**.
 6. If the domain is using LivePerson NLU v2 or a 3rd-party NLU engine, train the domain so that the addition is reflected in a new model version.
 
 ### Add a Regular Expression entity
@@ -109,13 +109,13 @@ You can see from the example below, that having 2 entities match the training ph
 
 1. Open the domain.
 2. In the upper-left corner, click **Entities**.
-3. Click **Add Entity** in the upper-right corner.
+3. In the upper-right corner, click **Add Entity**.
 4. Specify the following:
     * **Entity Name**: Enter the name of the entity using alphanumeric characters (no special characters). Consider using all capital letters and underscores (instead of spaces) as a convention; this makes the entities readily visible when they are used in intents and knowledge bases.
     * **Entity Type**: Select "Regular Expression."
     * **Regular Expression**: Enter the regular expression. All standard [RegEx rules](https://www.regexlib.com/) apply.
     * **Sample Values**: Enter at least five (5) example values that conform to the regular expression. These values aren't used during entity detection; they're used during domain training to improve the model's performance with respect to intent matching. Within Intent Builder, the sample values also serve as easy-to-read examples of the regular expression, making the expression more understandable at a glance.
-5. Click **Save** in the lower-right corner.
+5. Click **Save**.
 6. If the domain is using LivePerson NLU v2 or a 3rd-party NLU engine, train the domain so that the addition is reflected in a new model version.
 
 ### Using entities
