@@ -55,7 +55,7 @@ To disable context switching at the conversation start, you can add this code to
 **To create a dialog**
 
 1. Open the bot.
-2. Click **Add Dialog** in the lower-left corner.
+2. In the lower-left corner, click **Add Dialog**.
 3. In the Add Dialog window, select the **New Dialog** tab.
 
     <img class="fancyimage" style="width:600px" src="img/ConvoBuilder/dialogs_create1.png">
