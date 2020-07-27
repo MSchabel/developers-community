@@ -103,6 +103,9 @@ In the Knowledge Base application, you can easily identify an article's current 
 
 #### Using Valid From and Valid To dates
 
-When you [add an article](knowledge-base-articles.html#add-an-article), specify **Valid From** and **Valid To** dates if you want to control when the article becomes active or if and when it becomes inactive.
+When you [add an article](knowledge-base-articles.html#add-an-article), specify **Valid From** and **Valid To** dates if you want to control:
+
+* When the article becomes active
+* If and when the article becomes inactive
 
 For example, you might run a promotion over a holiday that has an associated FAQ, and that FAQ should only be used for a finite period of time. Or, you might have an article that you want to become active on a certain date and remain so indefinitely. You can satisfy requirements like these with the **Valid From** and/or **Valid To** date fields.
