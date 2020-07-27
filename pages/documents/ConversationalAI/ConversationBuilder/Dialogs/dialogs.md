@@ -177,9 +177,7 @@ Dialog settings include:
 
 ### Delete a dialog
 
-Deleting a dialog is a non-recoverable action, so be certain about doing so before taking this action. For example, make sure the dialog isn't referenced by any others within the bot.
-
-As an alternative, consider disabling the dialog instead; you can do this in the dialog's settings.
+Deleting a dialog is a non-recoverable action, so be certain about doing so before taking this action. For example, make sure the dialog isn't referenced by any others within the bot. As an alternative, consider disabling the dialog instead; you can do this in the dialog's settings.
 
 **To delete a dialog**
 
