@@ -51,7 +51,7 @@ Errors and failures are displayed <font color="red">in red</font>, so you can sp
 
 To aid in debugging, you can use the `printDebugMessage` scripting function in the code areas of an interaction to print the consumer's most recent message to the Bot Logs window. For more on this function, see [here](conversation-builder-scripting-functions.html#print-debug-message).
 
-### Glossary of errors
+### Event glossary
 
 #### Max limit on daisy chaining of interactions: 10
 
