@@ -253,6 +253,7 @@
       - pagename: Overview
       - pagename: Managing Custom Bots
       - pagename: Managing Post-Conversation Survey Bots
+      - pagename: Alerts
   - documentname: Bot Analytics
     pages:
       - pagename: Overview
@@ -262,7 +263,6 @@
     pages:
       - pagename: Permissions
       - pagename: Credentials
-  #    - pagename: Subscriptions
   - documentname: Third-Party Bots
     pages:
       - pagename: Getting Started

@@ -1,10 +1,10 @@
 ---
-pagename: Subscriptions
+pagename: Alerts
 Keywords:
 sitesection: Documents
 categoryname: "Conversational AI"
-documentname: Bot Accounts
-permalink: bot-accounts-subscriptions.html
+documentname: Bots Status
+permalink: bots-status-alerts.html
 indicator: both
 ---
 
