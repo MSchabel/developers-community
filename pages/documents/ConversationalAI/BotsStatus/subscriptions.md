@@ -12,6 +12,9 @@ You can set up alerts to notify you when a deployed bot's [agent connector statu
 
 While these alerts do inform you of changes to the status of the bot's agent connector, they don't provide insight into changes to the status of backend services supporting the Bots and Automation platform. For information on the latter, visit the [LivePerson Service Status Dashboard](https://status.liveperson.com/).
 
+{: .important}
+You don't need permissions to access the Bots Status application to set up alerts.
+
 **To set up an alert for a bot**
 
 1. Do one of the following:
