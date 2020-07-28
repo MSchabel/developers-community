@@ -14,7 +14,9 @@ Use the LivePerson Functions integration to invoke a function (lambda) that is d
 {: .important}
 Enabling the use of LivePerson's Function (FaaS) integrations requires a configuration change made by LivePerson. Contact your LivePerson account representative for assistance.
 
-### To add a LivePerson Functions integration
+### Add a LivePerson Functions integration
+
+**To add a LivePerson Functions integration**
 
 1. Open the bot, and click **Integrations** in the upper-left corner.
 2. Configure the integration settings:

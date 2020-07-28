@@ -16,6 +16,8 @@ For practice at using an API integration, try the [Integrations tutorial](conver
 {: .important}
 If you have [IP restrictions](https://knowledge.liveperson.com/security-regulations-security-ip-restriction.html) in place, you'll need to do some whitelisting before adding an API integration. For details, see [here](conversation-builder-networking-security.html).
 
+### Add an API integration
+
 **To add an API integration**
 
 1. Open the bot, and click **Integrations** in the upper-left corner.
