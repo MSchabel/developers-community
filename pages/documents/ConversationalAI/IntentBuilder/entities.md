@@ -59,6 +59,9 @@ Use a Regular Expression entity in situations where the possible entity values a
 * Order numbers
 * Help Desk ticket numbers
 
+{: .important}
+Regular Expression entities are available only in domains using the [LivePerson NLU v2 engine](intent-builder-natural-language-understanding.html#liveperson-nlu-v2).
+
 #### Built-in entities
 
 The platform automatically detects the entities listed below: 
