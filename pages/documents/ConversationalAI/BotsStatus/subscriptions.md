@@ -8,21 +8,23 @@ permalink: bots-status-alerts.html
 indicator: both
 ---
 
+You can set up alerts to notify you when a deployed bot's [agent connector status](bots-status-overview.html#bot-agent-connector-statuses) changes to Offline or Online.
 
-Bot Builder - dropdown should show public and own, for those bots that don't have alerts
-Admin - dropdown should show all bots (???), for those bots that don't have alerts
+While these alerts do inform you of changes to the status of the bot's agent connector, they don't provide insight into changes to the status of backend services supporting the Bots and Automation platform. For information on the latter, visit the [LivePerson Service Status Dashboard](https://status.liveperson.com/).
 
-**To subscribe to a bot**
+**To set up an alert for a bot**
 
-1. In the upper-right corner of the menu bar, click <img style="width:25px" src="img/ConvoBuilder/icon_subscriptions.png"> (Subscriptions icon).
-2. In the upper-right corner, select the bot to subscribe to, and click **Add Bot**.
+1. Do one of the following:
 
-    <img class="fancyimage" style="width:400px" src="img/ConvoBuilder/subscriptions_1.png">
+    * If your environment is LivePerson Cloud (i.e., you access Conversation Builder from within Conversational Cloud, and your browser is pointing to the "liveperson.net" domain), open one of the Conversational AI applications: Conversation Builder, Intent Builder, Bots Status, etc. Then, in the upper-right corner of the menu bar, click <img style="width:25px" src="img/ConvoBuilder/icon_subscriptions.png"> (Subscriptions icon).
 
-3. Select how you want to receive alerts.
-4. For **Bot monitor**, click the slider to enable the alert.
+    * If your environment is Amazon Web Services or AWS (i.e., you access Conversation Builder directly, and your browser is pointing to the "livepersonai.com" domain), in the top banner, click <img style="width:25px" src="img/ConvoBuilder/icon_profile_person.png">, and then select **Subscriptions**.
 
-    <img class="fancyimage" style="width:800px" src="img/ConvoBuilder/subscriptions_2.png">
+2. In the upper-right corner, select the bot to subscribe to, and click **Add Bot**. You can select from all bots to which you have access, regardless of whether they have agent connectors. However, to receive alerts, the bot must have at least one, deployed agent connector.
+3. Select how you want to receive alerts: Email and/or Phone (text). Note that the Phone option is only available if your environment is AWS. 
+4. For **Bot monitor**, click the slider to enable (turn on) the alert.
+
+    <img class="fancyimage" style="width:850px" src="img/ConvoBuilder/subscriptions_2.png">
 
 
 
