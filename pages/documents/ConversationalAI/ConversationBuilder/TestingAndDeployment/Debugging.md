@@ -59,7 +59,7 @@ This error is:
 
     BREAKING THE INTERACTION FLOW. Reached max limit on daisy chaining of interactions: 10
 
-This error occurs you have linked together 10 or more, consecutive Statement and/or Integration interactions within a single dialog. In other words, within those interactions, there are no Question interactions that stop the flow to ask for user input.
+This error occurs when you have linked together 10 or more, consecutive Statement and/or Integration interactions within a single dialog. In other words, within those interactions, there are no Question interactions that stop the flow to ask for user input.
 
 When the limit of 10 is reached, the interaction flow is stopped.
 
