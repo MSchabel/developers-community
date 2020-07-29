@@ -46,8 +46,6 @@ To get you quickly up and running with [intents](intent-builder-intents.html), L
 
 Once you [add a prebuilt domain](intent-builder-domains.html#add-a-prebuilt-domain), you can customize the domain as you see fit. It behaves like any other you might create manually or via an import file.
 
-If you want a quick, low effort way to get up and running with well-defined intents, LivePerson recommends that you get started by taking advantage of prebuilt domains.
-
 {: .important}
 Prebuilt domains for the [LP NLU v1 engine](intent-builder-natural-language-understanding.html#livepersons-nlu-engine) aren’t supported.
 
