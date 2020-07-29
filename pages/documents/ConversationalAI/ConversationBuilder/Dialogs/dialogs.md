@@ -70,7 +70,7 @@ To disable context switching at the conversation start, you can add this code to
 You can import dialogs from one bot to another within your organization. This can be useful when you have a well-defined dialog in one bot that you want to quickly and easily reuse in a different bot. Note the following:
 
 * You can import a maximum of 10 dialogs at a time from multiple bots. If you need to import more, you can repeat the process.
-* You can import dialogs of all types except [Fallback](conversation-builder-dialogs-fallback-dialogs.html) and [Disambiguation](conversation-builder-dialogs-disambiguation-dialogs.html).
+* You can import only dialogs of Dialog (see *Dialog types* above).
 * You can import dialogs from the bots to which you have access in your organization. For example, you can’t import dialogs from a bot that's owned by another bot developer and isn't [public](conversation-builder-bots-bot-basics.html#configure-bot-settings).
 * The following is imported:  
     * All selected dialogs and the interactions therein.
