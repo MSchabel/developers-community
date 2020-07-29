@@ -109,6 +109,10 @@ You can duplicate a dialog that is of type Dialog. This can be useful when you h
 1. In the dialogs panel on the left, click <img style="width:25px" src="img/ConvoBuilder/icon_ellipsis_dialogs.png"> (3-dot icon) beside the dialog's name.
 2. Select **Duplicate Dialog**.
 
+    The dialog is duplicated.
+
+    You might want to rename the copy. It is given a standard name based on the element name and bot name.
+
 
 ### Close the dialog
 
