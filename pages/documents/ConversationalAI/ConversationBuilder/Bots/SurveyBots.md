@@ -135,11 +135,11 @@ Clicking **Skip** automatically adds a custom rule for the "skip" response, so y
 {: .important}
 In an NPS interaction, don't enable Skip if your targeted channel is Facebook. Facebook doesn't support structured content that has more than 11 quick replies. The NPS question plus the Skip option is 12 quick replies. Using Skip will cause the conversation to end abruptly.
 
-#### Adding standard interactions
+#### Specifying a display format
 
-You can use only a subset of the standard interaction types in the Survey dialog; unavailable interactions are hidden from view on the toolbar.
+Each of the survey interactions lets you specify whether to display the question's answer choices as buttons, quick replies, or plain text. You specify this in the interaction's settings.
 
-Use the standard interactions to ask questions that reflect your brand's custom key performance indicators (KPIs) and/or other free-text questions. For example, you might want to obtain the consumer's age.
+<img class="fancyimage" style="width:500px" src="img/ConvoBuilder/surveyBot_displayChoices2.png">
 
 #### Handling free text answers
 
@@ -154,6 +154,12 @@ In the survey interactions in a survey bot, the fallback response is required, a
 You can customize the default fallback responses in the survey interactions.
 
 You cannot create a [Fallback dialog](conversation-builder-dialogs-fallback-dialogs.html).
+
+#### Adding standard interactions
+
+You can use only a subset of the standard interaction types in the Survey dialog; unavailable interactions are hidden from view on the toolbar.
+
+Use the standard interactions to ask questions that reflect your brand's custom key performance indicators (KPIs) and/or other free-text questions. For example, you might want to obtain the consumer's age.
 
 #### Closing the conversation
 
