@@ -244,13 +244,17 @@ If the domain uses the LivePerson NLU v2 engine or a 3rd-party engine, you'll ne
 
 Because we want to return the best response to users, the NLU has a threshold for which anything below this threshold will not be shown to the user. For intents, this threshold is set to GOOD. This is based on the NLU’s level of confidence in the match. The confidence score breakdown looks like this:
 
+**LivePerson NLU v1**
 * VERY GOOD: 85-100% match
-
 * GOOD: 70-85% match
-
 * FAIR PLUS: 65-70% match
-
 * FAIR: 50-65% match
+
+**LivePerson NLU v2**
+* VERY GOOD: 75-100% match
+* GOOD: 60-75% match
+* FAIR PLUS: 45-60% match
+* FAIR: 30-45% match
 
 You can't change the threshold when using intents (although you can do [this](knowledge-base-overview.html#thresholds) with knowledge bases).
 
