@@ -108,6 +108,9 @@ You can see from the example below, that having 2 entities match the training ph
 
 ### Add a Regular Expression entity
 
+{: .important}
+Regular Expression entities are available only in domains using the [LivePerson NLU v2 engine](intent-builder-natural-language-understanding.html#liveperson-nlu-v2).
+
 **To add a Regular Expression entity**
 
 1. Open the domain.
@@ -119,7 +122,7 @@ You can see from the example below, that having 2 entities match the training ph
     * **Regular Expression**: Enter the regular expression. All standard [RegEx rules](https://www.regexlib.com/) apply.
     * **Sample Values**: Enter at least five (5) example values that conform to the regular expression. These values aren't used during entity detection; they're used during domain training to improve the model's performance with respect to intent matching. Within Intent Builder, the sample values also serve as easy-to-read examples of the regular expression, making the expression more understandable at a glance.
 5. Click **Save**.
-6. If the domain is using LivePerson NLU v2 or a 3rd-party NLU engine, train the domain so that the addition is reflected in a new model version.
+6. Train the domain so that the addition is reflected in a new model version.
 
 ### Using entities
 

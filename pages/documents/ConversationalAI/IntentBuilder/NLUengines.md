@@ -110,10 +110,10 @@ Key characteristics include:
 
 #### 3rd-party NLU limitations
 
+- Doesn't support [prebuilt domains](intent-builder-overview.html#prebuilt-domains) or [Regular Expression entities](intent-builder-entities.html#regular-expression-entities).
 - The length of the domain name should not exceed 64 characters. (Watson limitation)
 - A domain can only support one language, which is specified on the Domain Settings page.
 - LivePerson does not support "pulling" into Intent Builder existing models that have been trained in IBM Watson or Google Dialogflow. Only model "push" is supported; this is accomplished by training the model in Intent Builder.
-- [Regular Expression entities](intent-builder-entities.html#regular-expression-entities) aren't supported in domains using a 3rd-party NLU engine.
 
 #### Step 1: Enable 3rd-party NLU support
 
