@@ -71,7 +71,7 @@ Let’s test our knowledge base and see how the NLU will return results.
 
     This is different enough that the NLU engine will return as FAIR PLUS. Generally, in a Knowledge Base integration in a bot, we set the threshold to GOOD, so, in this new example, the article wouldn't be shown to a user. However, we can easily “train” the article to respond to this input by clicking the thumbs-up icon that's beneath the result.
 
-3. Click **thumbs up**.
+3. Click <img style="width:25px" src="img/ConvoBuilder/icon_kb_thumbsUp.png"> (**Thumbs Up** icon).
     
     This adds the utterance to a set of “positive learnings” that are used in the matching.
 
@@ -81,7 +81,7 @@ Let’s test our knowledge base and see how the NLU will return results.
 
 <div class="important">Keep in mind that when you are training articles, it's very easy to use the thumbs-up button. It's so easy that you might *overtrain* the bot using lengthy or very specific intents just because you can. Try to keep your intent qualifiers as generalized as possible so that they have a high likelihood of matching many user utterances, not just one. Overall, use the training feature sparingly.</div>
 
-What about **thumbs down**? This should be used sparingly to differentiate two articles that might have intents that are close in meaning. NLU is not a specific pattern match, but more fuzzy, so having articles with similar intents but different content should be discouraged. That said, using thumbs down can help when that does occur, to indicate which of the two articles you'd like the NLU engine to match. Simply use the thumbs-down button on the article you'd like to de-prioritize, and the NLU engine will "prefer" the other one over it.
+What about **Thumbs Down**? This should be used sparingly to differentiate two articles that might have intents that are close in meaning. NLU is not a specific pattern match, but more fuzzy, so having articles with similar intents but different content should be discouraged. That said, using thumbs down can help when that does occur, to indicate which of the two articles you'd like the NLU engine to match. Simply use the thumbs-down button on the article you'd like to de-prioritize, and the NLU engine will "prefer" the other one over it.
 
 For more best practices, see [here](conversation-builder-best-practices-train-tune-nlu.html).
 

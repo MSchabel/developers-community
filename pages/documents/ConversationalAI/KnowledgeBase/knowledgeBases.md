@@ -120,16 +120,6 @@ Before performing a sync, make sure the Google sheet includes the "id" column th
 3. In the Settings panel, click **KB Settings**.
 4. Click **More Options**, scroll down to the **Sync Google Sheet Data Source** section, and click <img style="width:25px" src="img/ConvoBuilder/icon_kb_syncGoogleSheet.png"> (Refresh icon).
 
-### Refresh the intents
-
-The intents for every article are stored in a cache that is updated automatically every 5 minutes. But if you've made a recent change to intents--either [Knowledge Base intents or Domain intents](knowledge-base-overview.html#knowlege-base-intents-versus-domain-intents)--and you want to immediately see the result of the changes, you can manually refresh the cache.
-
-**To refresh the intents in a knowledge base**
-1. Open the knowledge base.
-2. In the upper-right corner, click <img style="width:25px" src="img/ConvoBuilder/icon_ellipsisVertical.png">, and select **Knowledge Base Menu**.
-3. In the Settings panel, click **KB Settings**.
-4. Click **More Options**, scroll down to the **Refresh Intents** section, and click <img style="width:25px" src="img/ConvoBuilder/icon_kb_refresh.png"> (Refresh icon).
-
 ### Download a knowledge base 
 
 Download of a knowledge base creates a CSV file.

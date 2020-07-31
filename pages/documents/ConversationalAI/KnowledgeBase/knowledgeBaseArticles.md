@@ -91,7 +91,7 @@ To accomplish this, in the Display Article interaction, we've configured the nex
 
 ### Enable or disable an article
 
-Enabled articles are returned by knowledge base searches in Knowledge Base integrations, while disabled articles are not. That said, keep in mind that an enabled article is returned only if the article is active, i.e., if the current date falls within the time period specified by the article's **Valid From** and **Valid To** dates, if specified. For more on this, see the discussion on active versus inactive articles [here](knowledge-base-overview.html#active-versus-inactive-articles).
+Enabled articles are returned by knowledge base searches in Knowledge Base integrations, while disabled articles are not. That said, keep in mind that an enabled article is returned only if the article is [active](knowledge-base-overview.html#active-versus-inactive-articles), i.e., if the current date and time in UTC falls within the time period specified by the article's **Valid From** and **Valid To** dates, if specified.
 
 **To enable or disable an article**
 
@@ -105,7 +105,7 @@ Enabled articles are returned by knowledge base searches in Knowledge Base integ
 
 ### Train a knowledge base
 
-To train a knowledge base, select the knowledge base, enter an utterance, and review the results. If you don't get any results for a particular utterance, you can adjust the filters by tapping the advanced search icon.
+To train a knowledge base, select the knowledge base, enter an utterance, and review the results. If you don't get any results for a particular utterance, you can adjust the filters by tapping <img style="width:25px" src="img/ConvoBuilder/icon_kb_sortAndFilter.png"> (Sort & Filters icon).
 
 <img class="fancyimage" style="width:700px" src="img/ConvoBuilder/kb_test.png">
 
