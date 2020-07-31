@@ -20,7 +20,7 @@ In Conversation Builder, the following built-in functions for managing the Conte
 {: .important}
 All update operations return a Boolean status. It is the bot developer's responsibility to ensure the operation was executed successfully.
 
-For a more in-depth introducton to the Context Session Store and details on the Conversation Orchestrator API, see [Context Session Store](maven-context-warehouse-context-session-store.html).
+For a more in-depth introducton to the Context Session Store and details on the Conversation Orchestrator API, see [Context Session Store](conversation-orchestrator-context-warehouse-context-session-store.html).
 
 {: .important}
 New to scripting functions? Please review the [Introduction](conversation-builder-scripting-functions-introduction.html).
