@@ -173,20 +173,20 @@ var acctId = botContext.getLPAccountId();
 
 ```
 
-### Get current and previous skills
+### Get LP engagement attribute
 
-Used to add previous and current skillIds to the botContext. If the conversation was transferred to the bot, you can track the previous skill Id that the consumer came from.
-
-{: .important}
-Previous Skill Id only works for Messaging. If used in a Chat conversation, it will be set to the same ID as the current Skill ID.
+The Get LP Engagement Attribute function retrieves the specified engagement attribute for the current conversation.
 
 | Function Name | Arguments | Returns |
 | --- | --- | --- |
-| `getLPEngagementAttribute()` | `"currentSkillId"`, `"previousSkillId"` | skillID (string) |
+| `getLPEngagementAttribute()` | `sharkVisitorId` - The ID of the real-time visitor,<br>`sharkSessionId` - The ID of the session,<br>`sharkContextId` -<br>`campaignId` - The ID of the campaign,<br>`engagementId` - The ID of the engagement,<br>`startTs` - The start time of the engagement,<br>`os` - The operating system,<br>`appId` - The ID of the app on the mobile device,<br>`brandId` - The ID of the brand,<br>`BearerToken` - The authentication credential,<br>`currentSkillId` - The ID of the current skill, or <br>`previousSkillId` - The ID of the previous skill | String |
+
+{: .important}
+`previousSkillId` only works for Messaging. If used in a Chat conversation, it will be set to the same ID as the current skill ID.
 
 #### Example
 
-The following example shows how to access current skill and previous skill IDs and set them to a botContext variable.
+The following example shows how to use the function to access the current skill and previous skill IDs and set them to a botContext variable.
 
 ```javascript
 var currentSkill = botContext.getLPEngagementAttribute("currentSkillId");
@@ -197,8 +197,8 @@ botContext.setBotVariable("previousSkill", previousSkill, true, false);
 ```
 
 **Messaging connector requirements:**
-- Ensure that the bot is set up with API OAuth login rather than password login
-- Ensure that the OAuth keys have permission to Engagement History
+- Ensure that the bot is set up with API OAuth login rather than password login.
+- Ensure that the OAuth keys have permission to Engagement History.
 
 <img class="fancyimage" style="width:500px;" src="img/ConvoBuilder/previousSkillSetupMessaging.png">
 
