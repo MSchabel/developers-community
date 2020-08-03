@@ -11,7 +11,7 @@ indicator: both
 
 ### Add a prebuilt domain
 
-For an introduction to prebuilt domains, see [here](intent-builder-overview.html#prebuilt-domains).
+Domains added from prebuilt domains use the [LP NLU v2 engine](intent-builder-natural-language-understanding.html#livepersons-nlu-engine). For an introduction to prebuilt domains, see [here](intent-builder-overview.html#prebuilt-domains).
 
 **To add a prebuilt domain**
 

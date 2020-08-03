@@ -49,7 +49,7 @@ A "prebuilt domain" is a ready-made domain that includes a set of well-defined, 
 Once you [add a prebuilt domain](intent-builder-domains.html#add-a-prebuilt-domain), you can customize the domain as you see fit. If you later decide that you don't want to use your customizations, and instead you want to [refresh the prebuilt domain](intent-builder-domains.html#refresh-a-prebuilt-domain) to reflect what is offered by LivePerson, you can also do this.
 
 {: .important}
-Prebuilt domains are available only for domains using the [LP NLU v2 engine](intent-builder-natural-language-understanding.html#livepersons-nlu-engine).
+Domains added from prebuilt domains use the [LP NLU v2 engine](intent-builder-natural-language-understanding.html#livepersons-nlu-engine).
 
 
 #### Training
