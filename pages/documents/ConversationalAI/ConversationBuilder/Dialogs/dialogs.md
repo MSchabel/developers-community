@@ -91,27 +91,23 @@ When you import dialogs, consider and address any dependencies across the dialog
 3. In the Add Dialog window, select the **From Existing Bots** tab.
 4. Browse and/or search to find and select the dialogs to import. You can search by bot name and dialog name.
 
-    <img class="fancyimage" style="width:600px" src="img/ConvoBuilder/dialogs_import1.png">
+    <img class="fancyimage" style="width:450px" src="img/ConvoBuilder/dialogs_import1.png">
 
 5. Click **Add**.
 
-    The selected dialogs are imported.
-
-    You might want to rename the imported dialogs, interactions, and integrations. They are given standard names based on the element name and destination bot name. 
+    The selected dialogs are imported. At this point, you might want to rename the imported dialogs, interactions, and integrations. They are given standard names based on the element name and destination bot name. 
 
 
 ### Duplicate a dialog
 
-You can duplicate a dialog that is of type Dialog. This can be useful when you have a well-defined dialog that you want to quickly and easily reuse in the same bot. During the import, the associations of domains, intents, and entities to interactions are maintained.
+You can duplicate a dialog that is of type Dialog (see *Dialog types* above). This can be useful when you have a well-defined dialog that you want to quickly and easily reuse in the same bot. During the import, the associations of domains, intents, and entities to interactions are maintained.
 
 **To duplicate a dialog**
 
 1. In the dialogs panel on the left, click <img style="width:25px" src="img/ConvoBuilder/icon_ellipsis_dialogs.png"> (3-dot icon) beside the dialog's name.
 2. Select **Duplicate Dialog**.
 
-    The dialog is duplicated.
-
-    You might want to rename the copy. It is given a standard name based on the element name and bot name.
+    The dialog is duplicated. At this point, you might want to rename the copy. It is given a standard name based on the element name and bot name.
 
 
 ### Close the dialog
