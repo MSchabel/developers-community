@@ -17,17 +17,29 @@ For an introduction to prebuilt domains, see [here](intent-builder-overview.html
 
 1. In the dashboard that lists your domains, click **Add Domain** in the upper-right corner.
 2. In the Add Domain window, click the **Prebuilt Domains** tab.
+3. Move your mouse over the desired domain. Then click **Preview** to see a description of the domain and some sample user phrases. This helps you to verify that the domain is one you want.
 
-    **Screen**
-
-3. Select the desired domain. Then click **Preview** to see a description of the domain and some sample user phrases. This helps you to verify that the domain is the one you want.
-
-    **screen**
+    <img class="fancyimage" style="width:700px" src="img/ConvoBuilder/ib_domainPrebuilt.png">
 
 4. Click **Add**.
 
     {: .important}
     After you add the domain, there's no need to train or activate it for the first time. This has been done automatically. However, from this point forward, things work as if you had created the domain manually: You can customize the domain as you see fit. If you subsequently make any changes, you must re-train the domain to create a new model version that reflects the changes. And when ready, you’ll need to activate the new model version.
+
+
+### Refresh a prebuilt domain
+
+If you've customized a [prebuilt domain](intent-builder-overview.html#prebuilt-domains), but you no longer want to use your customizations, you can refresh the domain so that it reflects what is offered by LivePerson. This removes all the domain's model versions, and it creates a single model version--trained and activated--that is based on the offered prebuilt domain.
+
+{: .important}
+You can refresh a prebuilt domain if you have not customized the *domain's name*. Once you do this, you break the relationship with the source prebuilt domain.
+
+**To refresh a prebuilt domain**
+
+1. In the dashboard that lists your domains, click **Add Domain** in the upper-right corner.
+2. In the Add Domain window, click the **Prebuilt Domains** tab.
+3. Move your mouse over the desired prebuilt domain, and click **Add**.
+4. In the Warning dialog that appears, click **Continue**.
 
 
 ### Add a domain manually or using an import file

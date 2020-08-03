@@ -39,15 +39,17 @@ The following are key characteristics of a domain:
 
 #### Prebuilt domains
 
-To get you quickly up and running with [intents](intent-builder-intents.html), LivePerson provides a set of prebuilt domains that you can easily add to your Intent Builder environment. A prebuilt domain is a ready-made domain that includes a set of well-defined, predefined intents. There are two kinds of prebuilt domains available:
+To get you quickly up and running with [intents](intent-builder-intents.html), LivePerson provides a set of prebuilt domains that you can easily add to your Intent Builder environment.
+
+A "prebuilt domain" is a ready-made domain that includes a set of well-defined, predefined intents. There are two kinds of prebuilt domains available:
 
 * Generic, prebuilt domains for a number of verticals: Telecommunications, Financial Services, Airlines and Insurance.
 * A cross-vertical, prebuilt domain that is appropriate for all verticals. This domain includes intents for things like customer account management, customer order management, e-commerce, billing and payment.
 
-Once you [add a prebuilt domain](intent-builder-domains.html#add-a-prebuilt-domain), you can customize the domain as you see fit. It behaves like any other you might create manually or via an import file.
+Once you [add a prebuilt domain](intent-builder-domains.html#add-a-prebuilt-domain), you can customize the domain as you see fit. If you later decide that you don't want to use your customizations, and instead you want to [refresh the prebuilt domain](intent-builder-domains.html#refresh-a-prebuilt-domain) to reflect what is offered by LivePerson, you can also do this.
 
 {: .important}
-Prebuilt domains for the [LP NLU v1 engine](intent-builder-natural-language-understanding.html#livepersons-nlu-engine) aren’t supported.
+Prebuilt domains are available only for domains using the [LP NLU v2 engine](intent-builder-natural-language-understanding.html#livepersons-nlu-engine).
 
 
 #### Training
