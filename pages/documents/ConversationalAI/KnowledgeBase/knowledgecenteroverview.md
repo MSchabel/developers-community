@@ -81,13 +81,10 @@ When an NLU search is performed, the knowledge base's language works differently
 
 An article is either active or inactive. Active articles are returned in knowledge base searches in Knowledge Base integrations while inactive articles aren't returned.
 
-An article is active if its **Enable Article** setting is turned on. If an enabled article has **Valid From** and **Valid To** dates (specified in UTC), it is only active during that time period.
+* An article is *active* if its **Enable Article** setting is turned on. If the article has **Valid From**/**Valid To** dates (optional, specified in UTC), it is only active during the specified time period. If no dates are specified, an enabled article is always active.
+* An article is *inactive* if its **Enable Article** setting is turned off. It's also inactive if the setting is turned on, but the current date and time in UTC falls outside the time period specified by **Valid From** and/or **Valid To**.
 
 <img class="fancyimage" style="width:800px" src="img/ConvoBuilder/kb_validDates.png">
-
-If no dates are specified, an enabled article is always active.
-
-An article is inactive if its **Enable Article** setting is turned off. It's also inactive if the setting is turned on, but the current date and time in UTC falls outside the time period specified by **Valid From** and **Valid To**.
 
 In the Knowledge Base application, you can easily identify an article's current status:
 
@@ -95,9 +92,6 @@ In the Knowledge Base application, you can easily identify an article's current 
 
 #### Using Valid From and Valid To dates
 
-When you [add an article](knowledge-base-articles.html#add-an-article), specify **Valid From** and **Valid To** dates if you want to control:
+You can specify optional **Valid From** and/or **Valid To** dates when you [add an article](knowledge-base-articles.html#add-an-article). 
 
-* When the article becomes active
-* If and when the article becomes inactive
-
-For example, you might run a promotion over a holiday that has an associated FAQ, and that FAQ should only be used for a finite period of time. Or, you might have an article that you want to become active on a certain date and remain so indefinitely. You can satisfy requirements like these with the **Valid From** and/or **Valid To** date fields.
+For example, you might run a promotion over a holiday that has an associated FAQ, and that FAQ should only be used for a finite period of time. Or, you might have an article that you want to become active on a certain date and remain so indefinitely. You can satisfy requirements like these with **Valid From** and/or **Valid To**.
