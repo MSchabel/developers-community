@@ -41,7 +41,7 @@ The following are key characteristics of a domain:
 
 To get you quickly up and running with [intents](intent-builder-intents.html), LivePerson provides a set of prebuilt domains that you can easily add to your Intent Builder environment.
 
-A "prebuilt domain" is a ready-made domain that includes a set of well-defined, predefined intents. There are two kinds of prebuilt domains available:
+A "prebuilt domain" is a ready-made, pretrained domain that includes a set of well-defined, predefined intents. There are two kinds of prebuilt domains available:
 
 * Generic, prebuilt domains for a number of verticals: Telecommunications, Financial Services, Airlines and Insurance.
 * A cross-vertical, prebuilt domain that is appropriate for all verticals. This domain includes intents for things like customer account management, customer order management, e-commerce, billing and payment.
