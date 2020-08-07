@@ -161,15 +161,19 @@ You can use only a subset of the standard interaction types in the Survey dialog
 
 Use the standard interactions to ask questions that reflect your brand's custom key performance indicators (KPIs) and/or other free-text questions. For example, you might want to obtain the consumer's age.
 
-#### Closing the conversation
+#### Closing the survey conversation
 
-As a best practice, end the dialog flow with an interaction whose next action is "Close conversation." This closes the conversation promptly.
+You can close a survey conversation in one of two ways:
 
-<img class="fancyimage" style="width:600px" src="img/ConvoBuilder/surveyBot_closeConvo.png">
+* [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog) - Recommended
+* [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation)
+
+{: .important}
+Closing the conversation with Close Dialog is recommended because it is more logic-driven and future-proof. Close Conversation forcibly closes the conversation. Close Dialog only closes the conversation once all dialogs are closed. If dialog types in addition to Survey are added in the future, you might want the logic of Close Dialog in place.
 
 You don't need to include a Text interaction that thanks the consumer for their participation; you can define the Thank You message in the survey bot's settings (discussed below).
 
-### Step 3 - Configure the bot settings
+### Step 3 - Configure the survey bot's settings
 
 1. Open the survey bot, and click <img style="width:25px" src="img/ConvoBuilder/icon_ellipsisVertical.png"> (3-dot icon) in the upper-left corner, just to the right of the menu bar.
 2. Select **Bot Settings**.
@@ -183,7 +187,13 @@ Survey bot settings include:
 - **Thank You Message**: Enable this to send a Thank You message before the survey conversation is closed. Then enter the message to send.
 - **Session Expired Message**: Enable this to send a Session Expired message when the user enters text after the session has timed out. Then enter the message to send. (For information on the Session Length setting, a related setting that's displayed for all bots, see [here](conversation-builder-bots-bot-basics.html#configure-bot-settings).)
 
-### Step 4 - Trigger the bot
+### Step 4 - Configure the custom bot
+
+A custom bot that triggers a survey bot must close the dialog with [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog), **not** [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation). This is because Close Dialog allows a post-conversation survey to be triggered, but Close Conversation does not.
+
+If applicable, update the custom bot to use Close Dialog.
+
+### Triggering the survey bot
 
 In order to trigger the survey, start a conversation on the account and skill on which you’ve defined the survey and bring the conversation to an end, either from the consumer or the agent side. Once the conversation closes, the survey will be triggered, and the agent workspace will show the caption, “Survey in progress.”
 
@@ -265,7 +275,3 @@ Yes, this works just like for a custom bot. The survey questions are displayed a
 #### Can a consumer skip a survey entirely?
 
 There's no way for the consumer to indicate they want to skip the survey entirely (e.g., no Skip button). However, the consumer can close the window to leave the survey.
-
-#### The dialogs in my custom bots end with Close Conversation (LP_CLOSECONVERSATION). Do I need to change this?
-
-Yes, you'll need to update the custom bots to use Close Dialog (LP_CLOSEDIALOG) instead. [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog) allows a post-conversation survey to be triggered, but [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation) does not.
