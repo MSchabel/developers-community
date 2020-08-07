@@ -73,8 +73,11 @@ You can import dialogs from one bot to another within your organization. This ca
 * You can import only dialogs of type Dialog (see *Dialog types* above).
 * You can import dialogs from the bots to which you have access in your organization. For example, you can’t import dialogs from a bot that's owned by another bot developer and isn't [public](conversation-builder-bots-bot-basics.html#configure-bot-settings).
 * The following is imported:  
-    * All selected dialogs and the interactions therein.
-    * All integrations referenced in the selected dialogs.
+    * All selected dialogs and the interactions therein
+    * All integrations referenced in the selected dialogs
+* The following isn't imported and must be added manually:
+    * Global functions
+    * Environment variables (you can [export](conversation-builder-environment-variables.html#export-environment-variables-to-a-csv-file) these)
 * During the import, the associations of domains, intents, and entities to interactions are maintained.
 * If you import a dialog that uses a knowledge base integration, and that knowledge base is owned by another bot developer and isn't [public](knowledge-base-knowledge-bases.html#configure-knowledge-base-settings), you can still use the integration in the bot, but you can't view or edit that knowledge base in the Knowledge Base application.
 
@@ -89,7 +92,7 @@ When you import dialogs, consider and address any dependencies across the dialog
 1. Open the destination bot.
 2. Click **Add Dialog** in the lower-left corner.
 3. In the Add Dialog window, select the **From Existing Bots** tab.
-4. Browse and/or search to find and select the dialogs to import. You can search by bot name and dialog name.
+4. Browse and/or search to find and select the dialogs to import. You can search by bot name and dialog name, and you can select up to 10 dialogs.
 
     <img class="fancyimage" style="width:450px" src="img/ConvoBuilder/dialogs_import1.png">
 
