@@ -194,7 +194,7 @@ A custom bot that triggers a survey bot must close the dialog with [Close Dialog
 If applicable, update the custom bot to use Close Dialog.
 
 
-### Deploying survey bots
+### Deploying the survey bot
 
 Some brands are existing Bot Studio users who manage surveys in Bot Studio. Others are just getting started with surveys and starting out in Conversation Builder. Deployment works differently depending on which group you fall into:
 
