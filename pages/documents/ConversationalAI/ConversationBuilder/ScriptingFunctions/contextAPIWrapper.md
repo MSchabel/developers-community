@@ -72,11 +72,12 @@ If the namespace already exists, this method does not create an additional one. 
 | Function Name | Arguments | Returns |
 | --- | --- | --- |
 | `registerContextNamespace(namespace)` | namespace (string) – The name of the namespace | Boolean |
+| `registerContextNamespace(namespace, ttl)` | namespace (string) – The name of the namespace<br><br>ttl (long) - "time to live," i.e., how long in seconds that the namespace is available (3 hours = 10,800 seconds, 1 day = 86,400 seconds, 1 week = 604,800 seconds, etc.) | Boolean |
 
 ##### Example
 
 ```javascript
-var success = botContext.registerContextNamespace("airlineTicketingBot");
+var success = botContext.registerContextNamespace("airlineTicketingBot", 10800);
 botContext.printDebugMessage("Register Namespace: " + success);
 ```
 
