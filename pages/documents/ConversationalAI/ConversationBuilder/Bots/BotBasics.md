@@ -81,6 +81,9 @@ Bot settings include:
 
     To enter a value, click the slider to activate it, enter the text in the field that appears, and save. There is no character limit.
 
+- **Enable Agent Annotations**: This setting is applicable for bots with dialog starters that use intents, not patterns. If you enable this, unrecognizable utterances that aren't handled by the bot are added to a review list in Conversational Cloud. This allows the agent to review the list, with the goal of updating the domain and/or bot accordingly. "Unrecognizable utterances" are defined as those that trigger the Fallback dialog. If the Fallback dialog employs a knowledge base search, only the utterances that return no results are added to the review list.
+
+
 ### Import a bot
 You can add an bot by importing a bot JSON file that was previously exported. This is useful when you need to make a copy of a bot (just export and then import back into the same environment), or you need to copy or move a bot from one environment to another.
 
