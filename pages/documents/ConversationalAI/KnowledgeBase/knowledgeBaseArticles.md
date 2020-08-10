@@ -119,7 +119,7 @@ To add more training phrases (intent qualifiers), you can manually add them to y
 
 <img class="fancyimage" style="width:700px" src="img/qualifiers.png">
 
-You can also use the Thumb Up and Down icons displayed in a search. Below is an example where the utterance returned some results. The preferred result was only a FAIR PLUS match. By tapping the **Thumbs Up** icon, you automatically add the current utterance to a Positive Learning set for this article. Tapping **Thumbs Down** does the opposite.
+You can also use the Thumb Up and Down icons displayed in a search. Below is an example where the utterance returned some results. The preferred result was only a GOOD match. By tapping the **Thumbs Up** icon, you automatically add the current utterance to a Positive Learning set for this article. Tapping **Thumbs Down** does the opposite.
 
 <img class="fancyimage" style="width:700px" src="img/ConvoBuilder/kb_test_thumbsUp.png">
 
