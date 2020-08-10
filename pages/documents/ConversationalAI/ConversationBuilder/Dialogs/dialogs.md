@@ -107,7 +107,7 @@ You can duplicate a dialog that is of type Dialog (see *Dialog types* above). Th
 
 During the operation:
 * The associations of domains, intents, and entities to interactions are maintained.
-* In the [Dialog Starter](conversation-builder-interactions-dialog-starter.html) interaction, the patterns or intents are duplicated. After the operation, modify or remove these as appropriate so that each dialog starter is unique within the bot.
+* In the [Dialog Starter](conversation-builder-interactions-dialog-starter.html) interaction, the patterns or the intent is duplicated. **After the operation, modify or remove these as appropriate so that each dialog starter is unique within the bot.**
 
 **To duplicate a dialog**
 
