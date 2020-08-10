@@ -38,8 +38,10 @@ You can overwrite a prebuilt domain if you have not customized the *domain's nam
 
 1. In the dashboard that lists your domains, click **Add Domain** in the upper-right corner.
 2. In the Add Domain window, click the **Prebuilt Domains** tab.
-3. Move your mouse over the desired prebuilt domain, and click **Add**.
+3. Move your mouse over the desired prebuilt domain, i.e., the domain that you want to overwrite. Click **Add**.
 4. In the Warning dialog that appears, click **Continue**.
+
+    <img class="fancyimage" style="width:400px" src="img/ConvoBuilder/ib_domainPrebuiltOverwrite.png">
 
 
 ### Add a domain manually or using an import file
