@@ -85,7 +85,7 @@ Bot settings include:
 
 
 ### Import a bot
-You can add an bot by importing a bot JSON file that was previously exported. This is useful when you need to make a copy of a bot (just export and then import back into the same environment), or you need to copy or move a bot from one environment to another.
+You can add a bot by importing a bot JSON file that was previously exported. This is useful when you need to make a copy of a bot (just export and then import back into the same environment), or you need to copy or move a bot from one environment to another.
 
 {: .important}
 Before you import a bot from a different environment (that is, from one region or hosting platform to another), check whether the bot uses domains for intents and entities. If it does, you’ll need to export those domains too and import them into the target environment _before_ importing the bot, keeping the domain names identical. If you don’t import the domains _first_, the associations inside the bot to the intents and entities will break during the bot import. If that happens, you’ll need to reassociate the intents and entities manually.
