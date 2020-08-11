@@ -168,10 +168,12 @@ You can close a survey conversation in one of two ways:
 * [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog) - Recommended
 * [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation)
 
-{: .important}
-Closing the conversation with Close Dialog is recommended because it is more logic-driven and future-proof. Close Conversation forcibly closes the conversation. Close Dialog only closes the conversation once all dialogs are closed. If dialog types in addition to Survey are added in the future, you might want the logic of Close Dialog in place.
+Closing the survey conversation with Close Dialog is recommended because it is more future-proof. Close Conversation forcibly closes the conversation. Close Dialog closes the conversation once all dialogs are closed. If, in the future, a new dialog type is added that triggers after the Survey dialog, you might want the logic of Close Dialog in place in the survey bot.
 
 You don't need to include a Text interaction that thanks the consumer for their participation; you can define the Thank You message in the survey bot's settings (discussed below).
+
+{: .important}
+Make sure that a custom bot that triggers a survey uses Close Dialog. [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog) allows a post-conversation survey to be triggered, but [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation) does not. 
 
 ### Step 3 - Configure the survey bot's settings
 
@@ -186,12 +188,6 @@ Survey bot settings include:
 - **Skill**: If desired, change the skill(s) that will trigger this survey bot.
 - **Thank You Message**: Enable this to send a Thank You message before the survey conversation is closed. Then enter the message to send.
 - **Session Expired Message**: Enable this to send a Session Expired message when the user enters text after the session has timed out. Then enter the message to send. (For information on the Session Length setting, a related setting that's displayed for all bots, see [here](conversation-builder-bots-bot-basics.html#configure-bot-settings).)
-
-### Step 4 - Configure the custom bot
-
-A custom bot that triggers a survey bot must close the dialog with [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog), **not** [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation). This is because Close Dialog allows a post-conversation survey to be triggered, but Close Conversation does not.
-
-If applicable, update the custom bot to use Close Dialog.
 
 
 ### Deploying the survey bot
