@@ -202,14 +202,13 @@ For more best practices when training and tuning NLU, see [here](conversation-bu
 
 #### Number of articles
 
-There isn’t a limit on the number of articles that a knowledge base can have, but the following are best practices:
+The number of articles that can be added to a new knowledge base is limited to 250 or fewer. Existing knowledge bases that already have greater than 250 articles are exempt from this. However, for an optimal consumer experience, brands are encouraged to design solutions that follow the best practices outlined here below.
 
 - A good guideline is 75-100 articles in a knowledge base. Keep in mind that every article requires some level of training if you’re going to use NLU (and not the text-to-text search mode).
 
 - If you have a knowledge base that exceeds 75-100 articles, consider splitting the knowledge base into smaller ones based on category, likewise splitting the intents into domains based on category, and adding multiple knowledge base integrations. Then have the NLU match the consumer’s question to the category-based intent and search the applicable knowledge base. This yields a faster response during the conversation.
 
     If you have a knowledge base that exceeds 75-100 articles, also consider using domain intents, and, for the domain, use LivePerson NLU v2, which has better performance with large sets of data.
-
 
 #### Titles, intent qualifiers, and training phrases
 
