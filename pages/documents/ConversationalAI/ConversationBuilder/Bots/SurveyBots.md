@@ -163,17 +163,14 @@ Use the standard interactions to ask questions that reflect your brand's custom 
 
 #### Closing the survey conversation
 
-You can close a survey conversation in one of two ways:
+Close a survey conversation with [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog).
 
-* [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog) - Recommended
-* [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation)
-
-Closing the survey conversation with Close Dialog is recommended because it is more future-proof. Close Conversation forcibly closes the conversation. Close Dialog closes the conversation once all dialogs are closed. If, in the future, a new dialog type is added that triggers after the Survey dialog, you might want the logic of Close Dialog in place in the survey bot.
+While you can also close a conversation with [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation), this isn't recommended, as Close Dialog is more future-proof. Close Conversation forcibly closes the conversation. Close Dialog closes the conversation once all dialogs are closed. If, in the future, a new dialog type is added that triggers after the Survey dialog, you might want the logic of Close Dialog in place in the survey bot.
 
 You don't need to include a Text interaction that thanks the consumer for their participation; you can define the Thank You message in the survey bot's settings (discussed below).
 
 {: .important}
-Make sure that a custom bot that triggers a survey uses Close Dialog. [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog) allows a post-conversation survey to be triggered, but [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation) does not. 
+Make sure that a custom bot *that triggers a survey bot* uses Close Dialog. [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog) allows a post-conversation survey to be triggered, but [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation) does not. 
 
 ### Step 3 - Configure the survey bot's settings
 
