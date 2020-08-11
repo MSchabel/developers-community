@@ -165,8 +165,6 @@ Use the standard interactions to ask questions that reflect your brand's custom 
 
 Close a survey conversation with [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog).
 
-While you can also close a conversation with [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation), this isn't recommended for survey bots, as Close Dialog is more future-proof. Close Conversation forcibly closes the conversation. Close Dialog closes the conversation once all dialogs are closed. If, in the future, a new dialog type is added that can be triggered after the Survey dialog, you might want the logic of Close Dialog in place in the survey bot.
-
 You don't need to include a Text interaction that thanks the consumer for their participation; you can define the Thank You message in the survey bot's settings (discussed below).
 
 {: .important}
