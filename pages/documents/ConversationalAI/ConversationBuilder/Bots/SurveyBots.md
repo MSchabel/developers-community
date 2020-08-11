@@ -26,23 +26,6 @@ Use a post-conversation survey bot to measure bot/agent and skill performance an
 To use survey bots created in Conversation Builder, you must be on the LivePerson platform, i.e., you log into Conversation Builder via single sign-on through Conversational Cloud. This feature isn't supported on the AWS platform where you log into Conversation Builder directly.<br><br>
 Survey bots are supported only in Messaging, not in Live Chat.
 
-### Survey bots vs. custom bots
-
-When creating a post-conversation survey bot, you work in Conversation Builder in the same, general way that you do with a custom bot. Create the bot and define its dialog flow, adding the interactions that meet your survey requirements.
-
-The following are key similarities and differences between building survey bots and custom bots in Conversation Builder.
-
-| Can I...? | Custom bots | Survey bots |
-| --- | --- | --- |
-| Export and import the bot | Yes | Yes, except the bot's assigned skills are not exported. |
-| Create versions and releases | Yes | Yes |
-| Preview | Yes |  Yes |
-| Deploy the bot | Yes, you manually create and deploy an agent connector. | No, this happens behind the scenes. For more, see *Deploying survey bots* farther below. |
-| Log transcripts | Yes | Yes |
-
-{: .important}
-There isn't a one-to-one correspondence between survey bots and custom bots. Survey bots are more like "manager" bots. You assign a skill or set of skills to a survey bot. When a conversation ends, if the conversation's last skill matches one assigned to the survey bot, the survey bot automatically begins the survey. In this way, a *single* survey bot can be responsible for triggering surveys for *multiple* custom bots, all based on skill.
-
 ### The survey flow
 
 #### Survey triggering
