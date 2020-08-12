@@ -46,6 +46,8 @@ A "prebuilt domain" is a ready-made, pretrained domain that includes a set of we
 * Generic, prebuilt domains for a number of verticals: Telecommunications, Financial Services, Airlines and Insurance.
 * A cross-vertical, prebuilt domain that is appropriate for all verticals. This domain includes intents for things like customer account management, customer order management, e-commerce, billing and payment.
 
+<img class="fancyimage" style="width:500px" src="img/ConvoBuilder/ib_domainPrebuiltEx.png">
+
 Once you [add a prebuilt domain](intent-builder-domains.html#add-a-prebuilt-domain), you can customize the domain as you see fit. If you later decide that you don't want to use your customizations, you can also [overwrite your domain](intent-builder-domains.html#overwrite-from-a-prebuilt-domain) to reflect the prebuilt domain that's offered by LivePerson.
 
 {: .important}
