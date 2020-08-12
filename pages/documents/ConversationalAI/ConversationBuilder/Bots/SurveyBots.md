@@ -23,8 +23,7 @@ Use a post-conversation survey bot to measure bot/agent and skill performance an
 <img style="width:400px" src="img/ConvoBuilder/surveyBot_example.png">
 
 {: .important}
-To use survey bots created in Conversation Builder, you must be on the LivePerson platform, i.e., you log into Conversation Builder via single sign-on through Conversational Cloud. This feature isn't supported on the AWS platform where you log into Conversation Builder directly.<br><br>
-Survey bots are supported only in Messaging, not in Live Chat.
+For a more in-depth introduction to survey bots, see [here](https://knowledge.liveperson.com/ai-bots-automation-post-conversation-surveys-post-conversation-survey-bot.html) in the Knowledge Center.<br><br>To use survey bots created in Conversation Builder, you must be on the LivePerson platform, i.e., you log into Conversation Builder via single sign-on through Conversational Cloud. This feature isn't supported on the AWS platform where you log into Conversation Builder directly.<br><br>Survey bots are supported only in Messaging, not in Live Chat.
 
 ### The survey flow
 
@@ -53,11 +52,9 @@ Both outcomes are tracked and reported on as part of the Analytics Builder, so y
 
 ### Prerequisite steps
 
-If you're new to working with survey bots, before you can begin building them, the feature must be enabled in Conversation Builder by LivePerson. Please contact your LivePerson account representative to enable this feature.
+Before you can begin building survey bots, the feature must be enabled in Conversation Builder by LivePerson. Please contact your LivePerson account representative to enable this feature.
 
-Conversely, if you've been using Bot Studio to create and manage survey bots, please see *Migrating from Bot Studio to Conversation Builder* below for information on moving to Conversation Builder.
-
-### Step 1 - Create the survey bot
+### Creating the survey bot
 
 1. Log into Conversation Builder.
 2. From the Bots dashboard, click **New Bot** in the upper-right corner.
@@ -77,7 +74,7 @@ Conversely, if you've been using Bot Studio to create and manage survey bots, pl
 
     <img class="fancyimage" style="width:800px" src="img/ConvoBuilder/surveyBot_dashboard.png">
 
-### Step 2 - Build out the survey bot
+### Building out the survey bot
 
 #### Adding survey interactions
 
@@ -153,7 +150,7 @@ You don't need to include a Text interaction that thanks the consumer for their 
 {: .important}
 Make sure that a custom bot *that triggers a survey bot* also uses Close Dialog. [Close Dialog](conversation-builder-dialogs-dialog-basics.html#close-the-dialog) allows a post-conversation survey to be triggered, but [Close Conversation](conversation-builder-dialogs-dialog-basics.html#close-the-conversation) does not. 
 
-### Step 3 - Configure the survey bot's settings
+### Configuring the survey bot's settings
 
 1. Open the survey bot, and click <img style="width:25px" src="img/ConvoBuilder/icon_ellipsisVertical.png"> (3-dot icon) in the upper-left corner, just to the right of the menu bar.
 2. Select **Bot Settings**.
@@ -167,15 +164,9 @@ Survey bot settings include:
 - **Thank You Message**: Enable this to send a Thank You message before the survey conversation is closed. Then enter the message to send.
 - **Session Expired Message**: Enable this to send a Session Expired message when the user enters text after the session has timed out. Then enter the message to send. (For information on the Session Length setting, a related setting that's displayed for all bots, see [here](conversation-builder-bots-bot-basics.html#configure-bot-settings).)
 
-
 ### Deploying the survey bot
 
-Some brands are existing Bot Studio users who manage surveys in Bot Studio. Others are just getting started with surveys and starting out in Conversation Builder. Deployment works differently depending on which group you fall into:
-
-* If you're getting started with surveys in Conversation Builder, you don't manually deploy a survey bot. When LivePerson enables this feature for your brand, this deploys the underlying agent connector that's shared by all survey bots. Therefore, **as soon as you create a survey bot and assign it a skill, the bot is active and can receive conversations.** Typically, brands don't develop in their Production environments, but if you do, for this reason, it's recommended that you assign to the survey bot a "test" skill that isn't used in a production campaign and use that to validate the bot before assigning it a production skill.
-
-* If you're an existing Bot Studio user who plans to move from Bot Studio to Conversation Builder for survey bot management, see *Migrating from Bot Studio to Conversation Builder* farther below on this page. This discusses the recommended workflow. When you make the switch, the underlying agent connector that's shared by all survey bots is deployed.
-
+You don't manually deploy a survey bot. When LivePerson enables this feature for your brand, this deploys the underlying agent connector that's shared by all survey bots. Therefore, **as soon as you create a survey bot and assign it a skill, the bot is active and can receive conversations.** Typically, brands don't develop in their Production environments, but if you do, for this reason, it's recommended that you assign to the survey bot a "test" skill that isn't used in a production campaign and use that to validate the bot before assigning it a production skill.
 
 ### Triggering the survey bot
 
@@ -209,7 +200,6 @@ Metrics from the FCR, CSAT, and NPS questions in surveys are captured in Convers
 #### Bot Analytics
 In the [Bot Analytics](https://developers.liveperson.com/bot-analytics-overview.html) application, you'll see survey bots reported in the same way as custom bots. There is no difference between the two.
 
-
 ### Monitoring survey bots
 
 If you have Bot Status Access [permissions](bot-accounts-permissions.html), you can use the Bots Status application that's intended for monitoring agent connectors to [monitor your survey bots]((bots-status-managing-post-conversation-survey-bots.html)). In Bots Status, you can redeploy the connector as a troubleshooting technique.
@@ -218,7 +208,7 @@ If you have Bot Status Access [permissions](bot-accounts-permissions.html), you 
 
 #### I currently use Bot Studio to create survey bots. How do I migrate to using Conversation Builder?
 
-See this topic in the Knowledge Center for information on the migration workflow.
+See [this topic](https://knowledge.liveperson.com/ai-bots-automation-post-conversation-surveys-migrating-from-bot-studio-to-conversation-builder.html) in the Knowledge Center for information on how to make the switch.
 
 #### How do I disable a survey bot?
 
