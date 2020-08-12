@@ -212,34 +212,13 @@ In the [Bot Analytics](https://developers.liveperson.com/bot-analytics-overview.
 
 ### Monitoring survey bots
 
-If you have Bot Status Access [permissions](bot-accounts-permissions.html), you can use the Bots Status application that's intended for monitoring agent connectors to monitor your survey bots.
-
-In Bots Status, you can redeploy the connector as a troubleshooting technique.
-
-Additionally, there are a few operations available that are specifically for brands migrating from Bot Studio to Conversation Builder for survey bot management, namely:
-
-* Migrate to Conversation Builder
-* Refresh the connector
-* Roll back to Bot Studio
-
-{: .important}
-For details on all these operations, see [here](bots-status-managing-post-conversation-survey-bots.html). Keep in mind that all survey bots share a single agent connector, so performing any operation on one survey bot affects all the survey bots.
-
-### Migrating from Bot Studio to Conversation Builder
-
-If you're an existing Bot Studio user with survey bots built in Bot Studio, the Post-Conversation Survey Bots feature in Conversation Builder is enabled by default.
-
-Be aware that bots in Bot Studio and Conversation Builder cannot run side by side. You'll need to manually recreate your existing Bot Studio survey bots in Conversation Builder. LivePerson recommends the following workflow:
-
-1. In Conversation Builder, manually recreate your survey bots. (If you're developing in your Production environment, which is not common and not recommended, assign the survey bots to "test" skills that aren't used in a production campaign, so you can test them before assigning production skills to them.) 
-2. Test the survey bots.
-3. Release the new survey bots to your Production environment.
-4. Use the Bots Status application to migrate your account from Bot Studio to Conversation Builder. For details on this, see [here](bots-status-managing-post-conversation-survey-bots.html#migrate-to-conversation-builder).
-
-{: .important}
-While you're completing steps 1 - 3, you can continue to use Bot Studio. Once you complete step 4, you can no longer use Bot Studio.
+If you have Bot Status Access [permissions](bot-accounts-permissions.html), you can use the Bots Status application that's intended for monitoring agent connectors to [monitor your survey bots]((bots-status-managing-post-conversation-survey-bots.html)). In Bots Status, you can redeploy the connector as a troubleshooting technique.
 
 ### FAQs
+
+#### I currently use Bot Studio to create survey bots. How do I migrate to using Conversation Builder?
+
+See this topic in the Knowledge Center for information on the migration workflow.
 
 #### How do I disable a survey bot?
 
