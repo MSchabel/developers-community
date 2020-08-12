@@ -27,18 +27,18 @@ Domains added from prebuilt domains use the [LP NLU v2 engine](intent-builder-na
     After you add the domain, there's no need to train or activate it for the first time. This has been done automatically. However, from this point forward, things work as if you had created the domain manually: You can customize the domain as you see fit. If you subsequently make any changes, you must re-train the domain to create a new model version that reflects the changes. And when ready, you’ll need to activate the new model version.
 
 
-### Overwrite a prebuilt domain
+### Overwrite from a prebuilt domain
 
-If you've customized a [prebuilt domain](intent-builder-overview.html#prebuilt-domains), but you no longer want to use your customizations, you can overwrite the domain so that it reflects what is offered by LivePerson. This removes all the domain's model versions, and it creates a single model version--trained and activated--that is based on the offered prebuilt domain.
+If you've added a [prebuilt domain](intent-builder-overview.html#prebuilt-domains) and customized it, but you no longer want to use your customizations, you can overwrite your domain to reflect the prebuilt domain offered by LivePerson. This operation removes all the model versions in your domain, and it creates a single model version--trained and activated--that is based on the prebuilt domain.
 
 {: .important}
-You can overwrite a prebuilt domain if you have not customized the *domain's name*. Once you do this, you break the relationship with the source prebuilt domain.
+You can overwrite from a prebuilt domain if you have not customized your domain's *name*. Once you do this, you break the relationship with the source prebuilt domain.
 
-**To overwrite a prebuilt domain**
+**To overwrite your domain with a prebuilt domain**
 
 1. In the dashboard that lists your domains, click **Add Domain** in the upper-right corner.
 2. In the Add Domain window, click the **Prebuilt Domains** tab.
-3. Move your mouse over the desired prebuilt domain, i.e., the domain that you want to overwrite. Click **Add**.
+3. Move your mouse over the prebuilt domain you want to use to overwrite your domain. Click **Add**.
 4. In the Warning dialog that appears, click **Continue**.
 
     <img class="fancyimage" style="width:400px" src="img/ConvoBuilder/ib_domainPrebuiltOverwrite.png">
