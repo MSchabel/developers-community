@@ -32,7 +32,7 @@ Domains added from prebuilt domains use the [LP NLU v2 engine](intent-builder-na
 If you've added a [prebuilt domain](intent-builder-overview.html#prebuilt-domains) and customized it, but you no longer want to use your customizations, you can overwrite your domain to reflect the prebuilt domain offered by LivePerson. This operation removes all the model versions in your domain, and it creates a single model version--trained and activated--that is based on the prebuilt domain.
 
 {: .important}
-You can overwrite from a prebuilt domain if you have not customized your domain's *name*. Once you do this, you break the relationship with the source prebuilt domain.
+You can overwrite your domain with a prebuilt domain if you have not customized your domain's *name*. Once you do this, you break the relationship with the source prebuilt domain.
 
 **To overwrite your domain with a prebuilt domain**
 
