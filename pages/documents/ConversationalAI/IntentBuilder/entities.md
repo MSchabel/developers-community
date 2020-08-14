@@ -86,7 +86,7 @@ Using the [Assist](conversation-builder-assist.html) tool, you can assign these 
 
 ### How entities affect the NLU score (LivePerson NLU v1 only)
 
-The more entities in a training phrase that match, the higher the score. This can be a powerful way to increase your matching accuracy, but if overused, can lead to a lot of false positives.
+When using the LivePerson NLU v1 engine, the more entities in a training phrase that match, the higher the score. This can be a powerful way to increase your matching accuracy, but if overused, can lead to a lot of false positives.
 
 You can see from the example below, that having 2 entities match the training phrases causes a 30% jump in score from the single entity matches. So use them for the key elements of your intent, but don’t overuse.
 
