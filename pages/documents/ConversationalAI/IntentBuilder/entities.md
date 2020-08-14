@@ -84,7 +84,7 @@ The platform automatically detects the entities listed below:
 
 Using the [Assist](conversation-builder-assist.html) tool, you can assign these built-in entities to user interactions and have the bot populate a [slot](conversation-builder-conversation-builder-variables-slots.html#slots) with the user's input to the question to which the entity was assigned.
 
-### How entities affect the NLU score
+### How entities affect the NLU score (LivePerson NLU v1 only)
 
 The more entities in a training phrase that match, the higher the score. This can be a powerful way to increase your matching accuracy, but if overused, can lead to a lot of false positives.
 
