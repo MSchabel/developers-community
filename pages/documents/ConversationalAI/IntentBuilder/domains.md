@@ -258,7 +258,7 @@ If the domain uses the LivePerson NLU v2 engine or a 3rd-party engine, you'll ne
 
 Because we want to return the best response to users, the NLU has a threshold for which anything below this threshold will not be shown to the user. For intents, this threshold is set to GOOD. This is based on the NLU’s level of confidence in the match. The confidence score breakdown looks like this:
 
-**LivePerson NLU v1**
+**LivePerson NLU v1 or 3rd-party NLU**
 * VERY GOOD: 85-100% match
 * GOOD: 70-85% match
 * FAIR PLUS: 65-70% match
