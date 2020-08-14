@@ -53,7 +53,7 @@ The values for Value Set entities are usually one or two words, as they represen
 
 Unlike a Value Set entity, a Regular Expression entity doesn't have a set of values. Instead, its value is a single regular expression defined using [Regular Expression](https://www.regexlib.com/) rules, for example (for a 6-digit number): `^\b\d{6}\b`.
 
-Whenever the consumer's utterance contains an expression that conforms to an entity's regular expression, the bot detects this, invokes the entity, and substitutes it into the utterance before determining the consumer's intent. In this way, it works like a Value Set entity.
+Whenever the consumer's utterance contains an expression that conforms to an entity's regular expression (e.g., the utterance is, "I want to check on my order 123456"), the bot detects this, invokes the entity, and substitutes it into the utterance before determining the consumer's intent. In this way, it works like a Value Set entity.
 
 Use a Regular Expression entity in situations where the entity's possible values all conform to a specific pattern, and that list of values is so long that it makes use of a Value Set entity unfeasible. Some use cases include:
 
@@ -61,7 +61,7 @@ Use a Regular Expression entity in situations where the entity's possible values
 * Order numbers
 * Help Desk ticket numbers
 
-For example, you might create a Regular Expression entity named ORDER_NO whose regular expression is ^\b\d{6}\b , which is the expression for a 6-digit number. You could then use this entity in the training phrases for an "order status" intent like so:
+For example, you might create a Regular Expression entity named ORDER_NO whose regular expression is ^\b\d{6}\b . As mentioned above, this is the regular expression for a 6-digit number. You could then use this entity in the training phrases for an "order status" intent like so:
 
 * "I want to check on my order ORDER_NO"
 * "What's the status of order ORDER_NO"
