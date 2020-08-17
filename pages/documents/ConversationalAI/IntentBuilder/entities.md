@@ -29,11 +29,13 @@ There are three types of entities:
 
 #### Value Set entities
 
-As their name suggests, Value Set entities are those that have a defined set of values. For instance, the entity `SPORTS` might have the following values in its value set:
+As their name suggests, Value Set entities are those that have a defined set of values. For example, the entity `SPORTS` might have the following values in its value set:
 
-* walking
-* running
 * football
+* running
+* walking
+
+<img class="fancyimage" style="width:500px" src="img/ConvoBuilder/ib_entitiesValueSet.png">
 
 Whenever the user's utterance contains one of these entity values (e.g., "I'm interested in running"), the bot detects this, invokes the `SPORTS` entity, and substitutes it into the utterance before determining the consumer's intent. This means, when you add training phrases for the intent, instead of adding these...
 
@@ -53,6 +55,8 @@ The values for Value Set entities are usually one or two words, as they represen
 
 Unlike a Value Set entity, a Regular Expression entity doesn't have a set of values. Instead, its value is a single regular expression defined using [Regular Expression](https://www.regexlib.com/) rules, for example (for a 6-digit number): `^\b\d{6}\b`.
 
+<img class="fancyimage" style="width:500px" src="img/ConvoBuilder/ib_entitiesRegEx.png">
+
 Whenever the consumer's utterance contains an expression that conforms to an entity's regular expression (e.g., the utterance is, "I want to check on my order 123456"), the bot detects this, invokes the entity, and substitutes it into the utterance before determining the consumer's intent. In this way, it works like a Value Set entity.
 
 Use a Regular Expression entity in situations where the entity's possible values all conform to a specific pattern, and that list of values is so long that it makes use of a Value Set entity unfeasible. Some use cases include:
@@ -61,10 +65,10 @@ Use a Regular Expression entity in situations where the entity's possible values
 * Order numbers
 * Help Desk ticket numbers
 
-For example, you might create a Regular Expression entity named ORDER_NO whose regular expression is ^\b\d{6}\b . As mentioned above, this is the regular expression for a 6-digit number. You could then use this entity in the training phrases for an "order status" intent like so:
+As an example, like shown in the image above, you might create a Regular Expression entity named ORDER_NO whose regular expression is ^\b\d{6}\b , which is the expression for a 6-digit number. You could then use this entity in the training phrases in an "order status" intent like so:
 
-* "I want to check on my order ORDER_NO"
-* "What's the status of order ORDER_NO"
+* "I want to check on my order `ORDER_NO`"
+* "What's the status of order `ORDER_NO`"
 
 {: .important}
 Regular Expression entities are available only in domains using the [LivePerson NLU v2 engine](intent-builder-natural-language-understanding.html#liveperson-nlu-v2).
