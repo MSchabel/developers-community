@@ -81,7 +81,11 @@ Bot settings include:
 
     To enter a value, click the slider to activate it, enter the text in the field that appears, and save. There is no character limit.
 
-- **Enable Agent Annotations**: This setting is applicable for bots with dialog starters that use intents, not patterns. If you enable this, unrecognizable utterances that aren't handled by the bot are added to a review list in Conversational Cloud. This allows the agent to review the list, with the goal of updating the domain and/or bot accordingly. "Unrecognizable utterances" are defined as those that trigger the Fallback dialog. If the Fallback dialog employs a knowledge base search, only the utterances that return no results are added to the review list.
+- **Enable Agent Annotations**: The purpose of this setting is to facilitate training the bot to handle unrecognized utterances. To make use of this setting, the bot must have at least one dialog starter with a specified *intent*.
+
+    If you enable this setting, unrecognized utterances that aren't handled by the bot are automatically added to a review list in Conversational Cloud. This makes it easy for the agent to review the list, with the goal of updating the domain and/or bot accordingly. 
+
+    "Unrecognized utterances" are defined as those that trigger the Fallback dialog. If the Fallback dialog employs a knowledge base search, only the utterances that return no results are added to the review list.
 
 
 ### Import a bot
