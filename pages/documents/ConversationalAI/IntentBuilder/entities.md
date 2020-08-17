@@ -39,9 +39,9 @@ As their name suggests, Value Set entities are those that have a defined set of 
 
 Whenever the user's utterance contains one of these entity values (e.g., "I'm interested in running"), the bot detects this, invokes the `SPORTS` entity, and substitutes it into the utterance before determining the consumer's intent. This means, when you add training phrases for the intent, instead of adding these...
 
-* "I'm interested in walking"
-* "I'm interested in jogging"
+* "I'm interested in football"
 * "I'm interested in running"
+* "I'm interested in walking"
 
 ...you can add a single training phrase that uses the `SPORTS` entity:
 
