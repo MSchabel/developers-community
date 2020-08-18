@@ -13,9 +13,6 @@ indicator: both
 
 Use the following built-in functions to get user data.
 
-{: .important}
-New to scripting functions? Please review the [Introduction](conversation-builder-scripting-functions-introduction.html).
-
 ### Get user channel
 Returns the platform channel the user is currently communicating on. This function returns:
 

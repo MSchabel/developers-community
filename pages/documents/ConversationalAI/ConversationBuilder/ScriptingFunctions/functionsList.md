@@ -12,9 +12,6 @@ indicator: both
 
 For quick reference, below is an alphabetically-ordered list of all built-in functions in Conversation Builder.
 
-{: .important}
-New to scripting functions? Please review the [Introduction](conversation-builder-scripting-functions-introduction.html).
-
 * [addQuickReplies](conversation-builder-scripting-functions-manage-conversation-flow.html#add-quick-replies)
 * [askMaven](conversation-builder-scripting-functions-askmaven.html)
 * [evaluateOptions](conversation-builder-scripting-functions-manage-conversation-flow.html#evaluate-options)

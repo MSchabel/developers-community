@@ -13,9 +13,6 @@ indicator: both
 
 Use the following built-in functions to affect the flow of a conversation.
 
-{: .important}
-New to scripting functions? Please review the [Introduction](conversation-builder-scripting-functions-introduction.html).
-
 ### Set message delay value
 
 Used to set a delay for a group of messages such that they appear like a real conversation.

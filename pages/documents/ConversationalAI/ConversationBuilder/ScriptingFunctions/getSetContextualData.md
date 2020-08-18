@@ -12,9 +12,6 @@ indicator: both
 
 Use the following built-in functions to get and set contextual data.
 
-{: .important}
-New to scripting functions? Please review the [Introduction](conversation-builder-scripting-functions-introduction.html).
-
 ### Get and set bot variable
 
 The **Set** Bot Variable function is used for setting a value to the botVariable so that it can be used in further code, and it returns a string. These variables are available throughout the entire bot.
@@ -50,9 +47,9 @@ if (count > 10) {
 
 Used for getting the most recent message from the user, whether typed or tapped (buttons or quick replies).
 
-| Function Name | Arguments | Return Payload |
+| Function Name | Arguments | Returns |
 | --- | --- | --- |
-| `getCurrentUserMessage()` | None | string: The full text of the most recent message from the user. |
+| `getCurrentUserMessage()` | None | (string) The full text of the most recent message from the user |
 
 #### Example
 
@@ -108,15 +105,15 @@ botContext.setBotTransferUserMessage("order status");
 
 ### Get environment variable
 
-Used for getting an environment variable. Environment Variables that are not set will return NULL.
+Used for getting an environment variable. An environment variable that isn't set returns NULL.
 
 | Function Name | Arguments | Returns |
 | --- | --- | --- |
-| `getEnvVariable(name)` | name (string) – The name for the variable. | The object defined by `name` |
+| `getEnvVariable(name)` | name (string) – The name of the variable. | The object defined by `name` |
 
 #### Example
 
-In the below example, we are using `getEnvVariable` to retrieve a string which will provide for us the correct skillId for routing depending upon the environment that the bot is currently in.
+In the example below, we use `getEnvVariable` to retrieve a string which will provide for us the correct skillId for routing depending upon the environment that the bot is currently in.
 
 ```javascript
 switch(intent){
@@ -262,7 +259,7 @@ botContext.sendMessage('I found the following nouns: '+ nlpNouns + ' and verbs: 
 
 ### Get sentiment
 
-Used for having the sentiment conversation chatbox messages with the user. Instead of using the sentiments in the intents of the bot, this function relies on programmably checking the sentiment of the user.
+Used for having the sentiment conversation chatbox messages with the user. Instead of using the sentiments in the intents of the bot, this function relies on programmatically checking the sentiment of the user.
 
 | Function Name | Arguments | Returns |
 | --- | --- | --- |
@@ -285,13 +282,13 @@ if(sentiment == "Positive"){
 
 ### Get quick reply payload
 
-Used to get access to the Quick Reply buttons that are selected by the user. These buttons have a hidden payload that may be different than the text shown to the user. For instance, Quick Replies asking you to select your favorite color might show: Red, Blue, Green, Purple, etc. but the payloads could be color01, color02, color03, etc.
+Used to access the Quick Reply buttons that are selected by the user. These buttons have a hidden payload that may be different than the text shown to the user. For instance, Quick Replies asking you to select your favorite color might show: Red, Blue, Green, Purple, etc., but the payloads could be color01, color02, color03, etc.
 
-This function is used in Process User Response (where the code for assessing user interaction resides).
+This function is used in Process User Response, where the code for assessing user interaction resides.
 
 | Function Name | Arguments | Returns |
 | --- | --- | --- |
-| `getQuickReplyPayload()` | None | string: The payload associated with the user-selected Quick Reply option. |
+| `getQuickReplyPayload()` | None | (string) The payload associated with the user-selected Quick Reply option |
 
 #### Example
 ```javascript
