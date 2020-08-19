@@ -89,11 +89,11 @@ Bot settings include:
 
     To make use of this setting, the bot must have at least one dialog starter with a specified *intent*.
 
-- **Enable Debug**: When this setting is enabled, you can use the "reset" and "display userid" commands for [debugging](conversation-builder-testing-deployment-debugging.html) purposes. Respectively, these commands reset the session and display the unique user ID for the consumer in the conversation.
+- **Enable Debug**: When this setting is enabled, you can use the "reset" and "display userid" commands in the conversation for [debugging](conversation-builder-testing-deployment-debugging.html) purposes. Respectively, these commands reset the session and display the unique user ID for the consumer in the conversation.
 
-    If you disable this setting, the commands cannot be run anywhere, i.e., they cannot be run in a channel post-deployment, nor can they be run within the [Preview tool](conversation-builder-testing-deployment-previewing.html) within Conversation Builder.
+    If you disable this setting, the commands cannot be run in the conversation anywhere, i.e., they cannot be run in a channel post-deployment, nor can they be run within the [Preview tool](conversation-builder-testing-deployment-previewing.html) within Conversation Builder.
 
-    By default, the setting is enabled (on), so that during bot development you can run these commands. To disable the commands, manually disable this bot-level setting in each applicable bot. If you have separate development and production bots, you might want to enable this in the former but disable it in the latter. If you don't have separate bots, you might want to disable this setting before you deploy a production bot.
+    By default, the setting is enabled (on), so that during bot development you can run the commands. To disable them, manually disable this bot-level setting in each applicable bot. If you have separate development and production bots, you might want to enable this in the former but disable it in the latter. If you don't have separate bots, you might want to disable this setting before you deploy a production bot.
 
 ### Import a bot
 You can add a bot by importing a bot JSON file that was previously exported. This is useful when you need to make a copy of a bot (just export and then import back into the same environment), or you need to copy or move a bot from one environment to another.
