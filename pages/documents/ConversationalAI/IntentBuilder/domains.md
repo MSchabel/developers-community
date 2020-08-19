@@ -17,7 +17,7 @@ Domains added from prebuilt domains use the [LP NLU v2 engine](intent-builder-na
 
 1. In the dashboard that lists your domains, click **Add Domain** in the upper-right corner.
 2. In the Add Domain window, click the **Prebuilt Domains** tab.
-3. Move your mouse over the desired domain. Then click **Preview** to see a description of the domain and some sample user phrases. This helps you to verify that the domain is one you want.
+3. Move your mouse over the desired domain. Then click **Preview** to see a description of the domain and some example intents. This helps you to verify that the domain is one you want.
 
     <img class="fancyimage" style="width:700px" src="img/ConvoBuilder/ib_domainPrebuilt.png">
 
