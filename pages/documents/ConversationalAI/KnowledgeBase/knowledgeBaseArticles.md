@@ -202,7 +202,7 @@ For more best practices when training and tuning NLU, see [here](conversation-bu
 
 #### Number of articles
 
-The number of articles that can be added to a knowledge base is limited to 250 or fewer. Existing knowledge bases that already have more than 250 articles are exempt from this. However, for an optimal consumer experience, brands are encouraged to design solutions that follow the best practices outlined here below.
+The number of articles that can be added to a new knowledge base is limited to 250 or fewer. Existing knowledge bases that already have more than 250 articles are exempt from this. However, for an optimal consumer experience, brands are encouraged to design solutions that follow the best practices outlined here below.
 
 - A good guideline is 75-100 articles in a knowledge base. Keep in mind that every article requires some level of training if you’re going to use NLU (and not the text-to-text search mode).
 
